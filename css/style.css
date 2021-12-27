@@ -35,12 +35,12 @@ h6 {
 }
 .herobox-wrap {
   display: flex;
-  gap: 15px;
   align-items: center;
   justify-content: center;
 }
 .hero-box {
   display: flex;
+  margin-right: 15px;
   align-items: center;
   justify-content: center;
   width: 50px;
@@ -85,12 +85,11 @@ h6 {
   width: 100%;
   height: 5vh;
   border-radius: 50px 50px 0 0;
-  top: -6vh;
+  top: -5vh;
 }
 .text-awal {
   display: flex;
-  gap: 15px;
-  margin: 10px 0;
+  margin: 10px 15px;
   padding: 5px 10px;
   color: white;
   border-bottom: 2px solid #254b62;
@@ -159,10 +158,10 @@ h6 {
 .address-box {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 .address-box img {
   width: 19px;
+  margin-right: 10px;
   margin-bottom: auto;
 }
 .address-box p,
@@ -177,7 +176,7 @@ h6 {
   justify-content: center;
 }
 /* Media query */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 900px) {
   .hero-title {
     text-align: left;
   }
