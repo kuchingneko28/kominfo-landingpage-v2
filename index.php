@@ -89,6 +89,7 @@ $kominfo = getJson($beritaKominfo);
           <h3>Berita terbaru</h3>
         </div>
         <div class="row">
+          <!-- Berita pemerintah -->
         <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4 berita-box">
             <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
@@ -96,6 +97,18 @@ $kominfo = getJson($beritaKominfo);
               <h3><?php echo $pemerintah[$i]["title"]; ?></h3>
               <p><span>Tanggal</span>  : <?php echo $pemerintah[$i]["date"]; ?></p>
               <p><?php echo $pemerintah[$i]["description"]; ?></p>
+            </div>
+            </div>
+        <?php endfor; ?>
+
+        <!-- Berita kominfo -->
+        <?php for($i = 0; $i < 3; $i++) : ?>
+            <div class="col-md-4 berita-box">
+            <img class="berita-pict" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
+            <div class="text-berita">
+              <h3><?php echo $kominfo[$i]["title"]; ?></h3>
+              <p><span>Tanggal</span>  : <?php echo $kominfo[$i]["date"]; ?></p>
+              <p><?php echo $kominfo[$i]["description"]; ?></p>
             </div>
             </div>
         <?php endfor; ?>
