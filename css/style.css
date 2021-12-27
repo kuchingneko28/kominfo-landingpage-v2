@@ -31,8 +31,8 @@ h6 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
-  margin-top: 35px;
+  width: 230px;
+  padding: 10px;
 }
 
 .herobox-wrap {
@@ -83,7 +83,7 @@ h6 {
   width: 100%;
   height: 5vh;
   border-radius: 50px 50px 0 0;
-  top: -50px;
+  top: -6vh;
 }
 .text-awal {
   display: flex;
@@ -130,13 +130,13 @@ h6 {
   width: 100%;
   height: 5vh;
   border-radius: 50px 50px 0 0;
-  top: -39.5px;
+  top: -4.9vh;
 }
 .footer {
   position: relative;
   margin-top: 50px;
   background-color: #133b5c;
-  height: 44vh;
+  height: 49vh;
   display: flex;
   color: white;
 }
@@ -195,6 +195,9 @@ h6 {
   }
   .hero-title p {
     font-size: 16px;
+  }
+  .footer {
+    height: 43vh;
   }
   .footer::before {
     top: -4.8vh;
