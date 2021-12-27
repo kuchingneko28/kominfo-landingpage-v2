@@ -196,9 +196,6 @@ h6 {
   .hero-title p {
     font-size: 16px;
   }
-  .footer {
-    height: 40vh;
-  }
   .footer::before {
     top: -4.8vh;
     bottom: 0;
