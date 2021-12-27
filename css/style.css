@@ -184,6 +184,7 @@ h6 {
     bottom: 0;
   }
   .hero-img {
+    width: 350px;
     margin-left: auto;
     margin-right: unset;
   }
@@ -192,6 +193,9 @@ h6 {
   }
   .hero-title p {
     font-size: 16px;
+  }
+  .footer {
+    height: 40vh;
   }
   .footer::before {
     top: -4.8vh;
