@@ -148,6 +148,7 @@ $kominfo = getJson($beritaKominfo);
             </div>
           </div>
         </div>
+        <br>
         <hr />
         <div class="copyright">
           <p>Create with love by KuchingNeko</p>
