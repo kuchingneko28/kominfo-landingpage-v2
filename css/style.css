@@ -31,12 +31,12 @@ h6 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 280px;
 }
 
 .herobox-wrap {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -135,7 +135,7 @@ h6 {
   position: relative;
   margin-top: 50px;
   background-color: #133b5c;
-  height: 43vh;
+  height: 44vh;
   display: flex;
   color: white;
 }
@@ -147,7 +147,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 30vh;
+  height: 27vh;
 
   align-items: center;
 }
@@ -162,6 +162,7 @@ h6 {
 }
 .address-box p,
 .copyright p {
+  text-align: center;
   font-size: 14px;
 }
 .copyright {
