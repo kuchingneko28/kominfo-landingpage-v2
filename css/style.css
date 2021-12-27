@@ -15,6 +15,9 @@ h6 {
   font-weight: 600;
 }
 
+.nav-item a {
+  font-size: 18px;
+}
 /* Background hero */
 .bg-hero {
   color: white;
@@ -69,6 +72,11 @@ h6 {
   font-size: 16px;
 }
 
+.hero-title span {
+  color: #254b62;
+  font-weight: 700;
+}
+
 /* Berita */
 .berita {
   position: relative;
@@ -91,12 +99,13 @@ h6 {
   margin: 10px 0;
   padding: 5px 10px;
   color: white;
-  border-bottom: 1px solid #133b5c;
+  border-bottom: 2px solid #254b62;
 }
 .text-awal h3 {
   font-size: 20px;
   padding-top: 3px;
-  color: #133b5c;
+  color: #254b62;
+  font-weight: 700;
 }
 .text-awal .icon {
   width: 30px;
@@ -108,7 +117,7 @@ h6 {
 .text-berita h3 {
   margin-top: 5px;
   font-size: 18px;
-  color: #133b5c;
+  color: #254b62;
 }
 .text-berita p {
   margin-bottom: 4px;
@@ -126,7 +135,7 @@ h6 {
 .footer::before {
   content: "";
   position: absolute;
-  background-color: #133b5c;
+  background-color: #254b62;
   width: 100%;
   height: 5vh;
   border-radius: 50px 50px 0 0;
@@ -135,7 +144,7 @@ h6 {
 .footer {
   position: relative;
   margin-top: 50px;
-  background-color: #133b5c;
+  background-color: #254b62;
   height: 49vh;
   display: flex;
   color: white;
