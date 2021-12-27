@@ -86,7 +86,7 @@ $kominfo = getJson($beritaKominfo);
       <div class="container">
         <div class="text-awal">
           <img class="icon" src="./img/icon-news.png" alt="" />
-          <h3>Berita terbaru</h3>
+          <h2>Berita terbaru</h2>
         </div>
         <div class="row">
           <!-- Berita pemerintah -->
@@ -121,7 +121,7 @@ $kominfo = getJson($beritaKominfo);
       <div class="container">
         <div class="text-awal">
           <img class="icon" src="./img/icon-message.png" alt="" />
-          <h3>Laporan isu hoax</h3>
+          <h2>Laporan isu hoax</h2>
         </div>
         <div class="row">
         <?php for($i = 0; $i < 3; $i++) : ?>
