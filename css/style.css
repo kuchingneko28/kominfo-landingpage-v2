@@ -118,13 +118,19 @@ h6 {
   color: #254b62;
 }
 .text-berita p {
-  margin-bottom: 4px;
   font-size: 15px;
 }
+.text-berita .deskripsi {
+  margin-bottom: 4px;
+  display: inline-block;
+  width: 350px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
 .text-berita span {
-  color: white;
-  background-color: #e2703a;
-  padding: 5px 8px;
+  font-weight: 700;
+  color: #e2703a;
   border-radius: 10px;
   display: inline-block;
 }

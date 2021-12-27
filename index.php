@@ -94,28 +94,31 @@ $kominfo = getJson($beritaKominfo);
             <div class="col-md-4 berita-box">
             <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
             <div class="text-berita">
-              <h3><?php echo $pemerintah[$i]["title"]; ?></h3>
-              <p><span>Tanggal</span>  : <?php echo $pemerintah[$i]["date"]; ?></p>
-              <p><?php echo $pemerintah[$i]["description"]; ?></p>
+              <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
+              <p class="tanggal"><span>Tanggal</span>  : <?php echo $pemerintah[$i]["date"]; ?></p>
+              <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
+
+              <div class="btn btn-primary">Readmore</div>
             </div>
-            </div>
-        <?php endfor; ?>
+          </div>
+          <?php endfor; ?>
 
         <!-- Berita kominfo -->
         <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4 berita-box">
             <img class="berita-pict" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
             <div class="text-berita">
-              <h3><?php echo $kominfo[$i]["title"]; ?></h3>
-              <p><span>Tanggal</span>  : <?php echo $kominfo[$i]["date"]; ?></p>
-              <p><?php echo $kominfo[$i]["description"]; ?></p>
+              <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
+              <p class="tanggal"><span>Tanggal</span>  : <?php echo $kominfo[$i]["date"]; ?></p>
+              <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
+              <div class="btn btn-primary">Readmore</div>
             </div>
-            </div>
+          </div>
         <?php endfor; ?>
         </div>
       </div>
     </section>
-
+    
     <!-- Hoax -->
     <section class="hoax">
       <div class="container">
@@ -124,13 +127,14 @@ $kominfo = getJson($beritaKominfo);
           <h2>Laporan isu hoax</h2>
         </div>
         <div class="row">
-        <?php for($i = 0; $i < 3; $i++) : ?>
+          <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4 berita-box">
             <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="296px" alt="" />
             <div class="text-berita">
-              <h3><?php echo $hoax[$i]["title"]; ?></h3>
-              <p><span>Tanggal</span>  : <?php echo $hoax[$i]["date"]; ?></p>
-              <p><?php echo $hoax[$i]["description"]; ?></p>
+              <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
+              <p class="tanggal"><span>Tanggal</span>  : <?php echo $hoax[$i]["date"]; ?></p>
+              <p class="deskripsi"><?php echo $hoax[$i]["description"]; ?></p>
+              <div class="btn btn-primary">Readmore</div>
             </div>
             </div>
         <?php endfor; ?>
