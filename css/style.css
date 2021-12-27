@@ -25,19 +25,15 @@ h6 {
 }
 /* Hero */
 .hero {
-  height: 90vh;
-}
-.hero .row {
-  margin-top: calc(16px * 3);
 }
 .hero-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 230px;
+  margin-bottom: 50px;
+  width: 280px;
   padding: 10px;
 }
-
 .herobox-wrap {
   display: flex;
   gap: 15px;
@@ -122,10 +118,8 @@ h6 {
 }
 .text-berita .deskripsi {
   margin-bottom: 4px;
-  display: inline-block;
-  width: 350px;
   white-space: nowrap;
-  overflow: hidden !important;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .text-berita span {
@@ -142,13 +136,12 @@ h6 {
   width: 100%;
   height: 5vh;
   border-radius: 50px 50px 0 0;
-  top: -4.9vh;
+  top: -4.7vh;
 }
 .footer {
   position: relative;
   margin-top: 50px;
   background-color: #254b62;
-  height: 49vh;
   display: flex;
   color: white;
 }
@@ -197,7 +190,7 @@ h6 {
     bottom: 0;
   }
   .hero-img {
-    width: 350px;
+    width: 360px;
     margin-left: auto;
     margin-right: unset;
     margin-top: unset;
@@ -207,9 +200,6 @@ h6 {
   }
   .hero-title p {
     font-size: 16px;
-  }
-  .footer {
-    height: 43vh;
   }
   .footer::before {
     top: -4.8vh;
