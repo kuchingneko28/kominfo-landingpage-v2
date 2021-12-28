@@ -1,5 +1,5 @@
 const sr = ScrollReveal();
-sr.reveal(".reveal .container", {
+sr.reveal(".reveal .text-awal", {
   delay: 300,
   duration: 300,
   reset: true,
