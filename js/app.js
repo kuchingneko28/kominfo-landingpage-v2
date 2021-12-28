@@ -7,6 +7,6 @@ sr.reveal(".reveal .text-awal", {
 
 sr.reveal(".reveal .col-md-4", {
   delay: 500,
-  duration: 500,
+  duration: 600,
   reset: true,
 });
