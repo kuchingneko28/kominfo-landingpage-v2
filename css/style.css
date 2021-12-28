@@ -24,9 +24,6 @@ h6 {
   font-weight: 600;
 }
 
-.nav-item a {
-  text-transform: uppercase;
-}
 /* Background hero */
 .bg-hero {
   color: var(--text-white);
@@ -98,11 +95,11 @@ h6 {
   top: -14px;
 }
 .text-awal {
+  padding-top: 25px;
   display: flex;
   color: var(--text-white);
 }
 .text-awal h2 {
-  text-transform: uppercase;
   font-size: 20px;
   padding-top: 3px;
   color: var(--text-color);
