@@ -95,10 +95,9 @@ $kominfo = getJson($beritaKominfo);
             <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
             <div class="text-berita">
               <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
-              <p class="tanggal"><span>Tanggal</span>  : <?php echo $pemerintah[$i]["date"]; ?></p>
+              <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
               <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
-
-              <div class="btn btn-primary">Readmore</div>
+              <a href="" class="button">Readmore</a>
             </div>
           </div>
           <?php endfor; ?>
@@ -111,7 +110,7 @@ $kominfo = getJson($beritaKominfo);
               <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
               <p class="tanggal"><span>Tanggal</span>  : <?php echo $kominfo[$i]["date"]; ?></p>
               <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
-              <div class="btn btn-primary">Readmore</div>
+              <a href="" class="button">Readmore</a>
             </div>
           </div>
         <?php endfor; ?>
@@ -134,7 +133,7 @@ $kominfo = getJson($beritaKominfo);
               <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
               <p class="tanggal"><span>Tanggal</span>  : <?php echo $hoax[$i]["date"]; ?></p>
               <p class="deskripsi"><?php echo $hoax[$i]["description"]; ?></p>
-              <div class="btn btn-primary">Readmore</div>
+              <a href="" class="button">Readmore</a>
             </div>
             </div>
         <?php endfor; ?>

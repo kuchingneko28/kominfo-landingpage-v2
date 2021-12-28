@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg-color: #96c7c1;
+  --bg-color: linear-gradient(180deg, rgba(56, 163, 165, 1) 0%, rgba(87, 204, 153, 1) 100%);
   --text-white: white;
-  --text-blue: #254b62;
+  --text-color: #22577a;
+  --bg-footer: rgba(56, 163, 165, 1);
   --text-orange: #e2703a;
+  --shadow: rgba(87, 204, 153, 0.4);
 }
 
 /* Basic Css */
@@ -28,7 +30,7 @@ h6 {
 /* Background hero */
 .bg-hero {
   color: var(--text-white);
-  background-color: var(--bg-color);
+  background: var(--bg-color);
 }
 /* Hero */
 
@@ -52,7 +54,7 @@ h6 {
   height: 50px;
   background-color: var(--text-white);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 4px rgba(105, 152, 171, 0.3);
+  box-shadow: 0px 0px 10px 4px var(--shadow);
 }
 .hero-box img {
   width: 33px;
@@ -65,15 +67,15 @@ h6 {
   line-height: 20px;
 }
 .hero-title h1 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .hero-title p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .hero-title span {
-  color: var(--text-blue);
+  color: var(--text-color);
 }
 
 /* Berita */
@@ -99,7 +101,7 @@ h6 {
 .text-awal h2 {
   font-size: 20px;
   padding-top: 3px;
-  color: var(--text-blue);
+  color: var(--text-color);
 }
 .text-awal .icon {
   width: 30px;
@@ -112,7 +114,7 @@ h6 {
 .text-berita h3 {
   margin-top: 5px;
   font-size: 18px;
-  color: var(--text-blue);
+  color: var(--text-color);
 }
 .text-berita p {
   font-size: 15px;
@@ -124,15 +126,28 @@ h6 {
   text-overflow: ellipsis;
 }
 .text-berita span {
+  background: var(--text-orange);
   display: inline-block;
-  color: var(--text-orange);
-  border-radius: 10px;
+  color: var(--text-white);
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--text-white);
+  border-radius: 5px;
+  background: var(--bg-footer);
+  text-decoration: none;
+}
+.button:hover {
+  color: white;
 }
 /* Footer */
 .footer::before {
   content: "";
   position: absolute;
-  background-color: var(--text-blue);
+  background: var(--bg-footer);
   width: 100%;
   border-radius: 50px 50px 0 0;
   height: 15px;
@@ -141,7 +156,7 @@ h6 {
 .footer {
   position: relative;
   margin-top: 50px;
-  background-color: var(--text-blue);
+  background: var(--bg-color);
   display: flex;
   color: var(--text-white);
 }
