@@ -91,30 +91,34 @@ $kominfo = getJson($beritaKominfo);
         <div class="row">
           <!-- Berita pemerintah -->
         <?php for($i = 0; $i < 3; $i++) : ?>
-            <div class="col-md-4 berita-box">
-            <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
-            <div class="text-berita">
-              <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
-              <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
-              <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
-              <a href="" class="button">Readmore</a>
+            <div class="col-md-4">
+              <div class="berita-box">
+                <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
+                <div class="text-berita">
+                  <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
+                  <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
+                  <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
+                  <a class="button">Readmore</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <?php endfor; ?>
-
+              <?php endfor; ?>
+              
         <!-- Berita kominfo -->
         <?php for($i = 0; $i < 3; $i++) : ?>
-            <div class="col-md-4 berita-box">
-            <img class="berita-pict" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
-            <div class="text-berita">
-              <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
-              <p class="tanggal"><span>Tanggal</span>  : <?php echo $kominfo[$i]["date"]; ?></p>
-              <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
-              <a href="" class="button">Readmore</a>
+            <div class="col-md-4">
+              <div class="berita-box">
+                <img class="berita-pict" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
+                <div class="text-berita">
+                  <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
+                  <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
+                  <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
+                  <a class="button">Readmore</a>
+                </div>
+              </div>
             </div>
-          </div>
-        <?php endfor; ?>
-        </div>
+              <?php endfor; ?>
+            </div>
       </div>
     </section>
     
@@ -127,17 +131,18 @@ $kominfo = getJson($beritaKominfo);
         </div>
         <div class="row">
           <?php for($i = 0; $i < 3; $i++) : ?>
-            <div class="col-md-4 berita-box">
-            <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="296px" alt="" />
-            <div class="text-berita">
-              <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
-              <p class="tanggal"><span>Tanggal</span>  : <?php echo $hoax[$i]["date"]; ?></p>
-              <p class="deskripsi"><?php echo $hoax[$i]["description"]; ?></p>
-              <a href="" class="button">Readmore</a>
+            <div class="col-md-4">
+              <div class="berita-box">
+                <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="296px" alt="" />
+                <div class="text-berita">
+                  <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
+                  <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
+                  <a class="button">Readmore</a>
+                </div>
+              </div>
             </div>
+              <?php endfor; ?>
             </div>
-        <?php endfor; ?>
-        </div>
       </div>
     </section>
     <!-- Footer -->

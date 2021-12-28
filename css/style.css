@@ -83,7 +83,8 @@ h6 {
   position: relative;
 }
 .berita-box {
-  padding: 10px;
+  margin: 13px 0;
+  border-radius: 10px;
 }
 .berita::before {
   content: "";
@@ -111,6 +112,9 @@ h6 {
 .berita-pict {
   width: 100%;
 }
+.text-berita {
+  padding: 10px;
+}
 .text-berita h3 {
   margin-top: 5px;
   font-size: 18px;
@@ -130,7 +134,7 @@ h6 {
   display: inline-block;
   color: var(--text-white);
   border-radius: 5px;
-  padding: 4px 8px;
+  padding: 3px 7px;
 }
 .button {
   display: inline-block;
