@@ -1,12 +1,12 @@
 const sr = ScrollReveal();
 sr.reveal(".reveal .container", {
-  delay: 500,
-  duration: 500,
+  delay: 300,
+  duration: 300,
   reset: true,
 });
 
 sr.reveal(".reveal .col-md-4", {
-  delay: 700,
-  duration: 700,
+  delay: 500,
+  duration: 500,
   reset: true,
 });
