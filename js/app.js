@@ -1,16 +1,6 @@
 const sr = ScrollReveal();
-sr.reveal(".hero", {
-  delay: 300,
-  duration: 600,
-  reset: true,
-});
-sr.reveal(".text-awal", {
+sr.reveal(".reveal .container", {
   delay: 600,
-  duration: 700,
-  reset: true,
-});
-sr.reveal(".berita-box", {
-  delay: 900,
-  duration: 800,
+  duration: 600,
   reset: true,
 });

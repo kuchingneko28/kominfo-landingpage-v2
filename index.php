@@ -82,7 +82,7 @@ $kominfo = getJson($beritaKominfo);
     </div>
 
     <!-- Berita -->
-    <section class="berita">
+    <section class="berita reveal">
       <div class="container">
         <div class="text-awal">
           <img class="icon" src="./img/icon-news.png" alt="" />
@@ -123,7 +123,7 @@ $kominfo = getJson($beritaKominfo);
     </section>
     
     <!-- Hoax -->
-    <section class="hoax">
+    <section class="hoax reveal">
       <div class="container">
         <div class="text-awal">
           <img class="icon" src="./img/icon-message.png" alt="" />
@@ -146,7 +146,7 @@ $kominfo = getJson($beritaKominfo);
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer reveal">
       <div class="container">
         <div class="row">
           <div class="col address-wrap">
