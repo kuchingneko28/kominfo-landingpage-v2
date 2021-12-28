@@ -81,9 +81,9 @@ h6 {
   position: absolute;
   background-color: white;
   width: 100%;
-  height: 5vh;
+  height: 15px;
   border-radius: 50px 50px 0 0;
-  top: -6vh;
+  top: -24.2px;
 }
 .text-awal {
   display: flex;
@@ -120,7 +120,6 @@ h6 {
 }
 .text-berita span {
   display: inline-block;
-  font-weight: 700;
   color: #e2703a;
   border-radius: 10px;
 }
@@ -130,9 +129,9 @@ h6 {
   position: absolute;
   background-color: #254b62;
   width: 100%;
-  height: 5vh;
   border-radius: 50px 50px 0 0;
-  top: -4.7vh;
+  height: 15px;
+  top: -14.2px;
 }
 .footer {
   position: relative;
@@ -149,8 +148,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 27vh;
-
+  height: 175px;
   align-items: center;
 }
 .address-box {
@@ -162,8 +160,7 @@ h6 {
   margin-right: 10px;
   margin-bottom: auto;
 }
-.address-box p,
-.copyright p {
+.address-box p {
   text-align: center;
   font-size: 14px;
 }
@@ -173,8 +170,11 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-/* Media query */
-@media screen and (min-width: 900px) {
+.copyright p {
+  font-size: 13px;
+}
+/* Media query untuk desktop view*/
+@media screen and (min-width: 904px) {
   .hero-title {
     text-align: left;
   }
@@ -188,16 +188,19 @@ h6 {
     margin-right: unset;
   }
   .hero-title h1 {
-    font-size: 35px;
+    font-size: 36px;
   }
   .hero-title p {
     font-size: 16px;
   }
-  .footer::before {
-    top: -4.8vh;
-  }
   .address-wrap {
     align-items: unset;
+  }
+  .berita::before {
+    top: -25px;
+  }
+  .footer::before {
+    top: -14.7px;
   }
   .copyright {
     justify-content: space-between;
