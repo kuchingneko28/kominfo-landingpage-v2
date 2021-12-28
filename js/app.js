@@ -1,6 +1,6 @@
 const sr = ScrollReveal();
 sr.reveal(".reveal .container", {
-  delay: 600,
-  duration: 600,
+  delay: 500,
+  duration: 500,
   reset: true,
 });
