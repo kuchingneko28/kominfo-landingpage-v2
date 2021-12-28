@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg-color: linear-gradient(180deg, rgba(56, 163, 165, 1) 0%, rgba(87, 204, 153, 1) 100%);
+  --bg-color: linear-gradient(95deg, rgba(56, 163, 165, 1) 0%, rgba(87, 204, 153, 1) 100%);
   --text-white: white;
   --text-color: #22577a;
   --bg-footer: rgba(56, 163, 165, 1);
-  --text-orange: #e2703a;
+  --bg-orange: linear-gradient(95deg, rgba(255, 127, 63, 1) 0%, rgba(255, 89, 89, 1) 100%);
   --shadow: rgba(87, 204, 153, 0.4);
 }
 
@@ -130,7 +130,7 @@ h6 {
   text-overflow: ellipsis;
 }
 .text-berita span {
-  background: var(--text-orange);
+  background: var(--bg-orange);
   display: inline-block;
   color: var(--text-white);
   border-radius: 5px;
@@ -141,7 +141,7 @@ h6 {
   padding: 8px 16px;
   color: var(--text-white);
   border-radius: 5px;
-  background: var(--bg-footer);
+  background: var(--bg-color);
   text-decoration: none;
 }
 .button:hover {
@@ -151,7 +151,7 @@ h6 {
 .footer::before {
   content: "";
   position: absolute;
-  background: var(--bg-footer);
+  background: var(--bg-color);
   width: 100%;
   border-radius: 50px 50px 0 0;
   height: 15px;
