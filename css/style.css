@@ -7,6 +7,7 @@
   --bg-footer: rgba(56, 163, 165, 1);
   --bg-orange: linear-gradient(95deg, rgba(255, 127, 63, 1) 0%, rgba(255, 89, 89, 1) 100%);
   --shadow: rgba(87, 204, 153, 0.4);
+  --border-color: rgba(255, 127, 63, 1);
 }
 
 /* Basic Css */
@@ -95,9 +96,20 @@ h6 {
   top: -14px;
 }
 .text-awal {
+  position: relative;
   padding-top: 25px;
+  padding-bottom: 3px;
   display: flex;
   color: var(--text-white);
+}
+.text-awal::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid var(--border-color);
 }
 .text-awal h2 {
   font-size: 20px;
