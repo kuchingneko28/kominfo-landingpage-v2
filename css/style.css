@@ -140,7 +140,7 @@ h6 {
   font-size: 15px;
 }
 .text-berita .deskripsi {
-  margin: 10px 0;
+  margin-top: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -149,6 +149,7 @@ h6 {
 .button {
   display: inline-block;
   padding: 8px 16px;
+  margin-top: 10px;
   color: var(--text-white);
   border-radius: 5px;
   background: var(--bg-color);
