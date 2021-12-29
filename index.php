@@ -96,7 +96,18 @@ $kominfo = getJson($beritaKominfo);
                 <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
-                  <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
+                  <div class="label post">
+                  <img src="./img/icon-calender.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["date"]; ?></span>
+                </div>
+                <div class="label catagory">
+                  <img src="./img/icon-tag.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
+                </div>
+                <div class="label total-view">
+                  <img src="./img/icon-eye.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["views"]; ?></span>
+                </div>
                   <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
                   <a class="button">Readmore</a>
                 </div>
@@ -111,7 +122,18 @@ $kominfo = getJson($beritaKominfo);
                 <img class="berita-pict" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
-                  <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
+                  <div class="label post">
+                  <img src="./img/icon-calender.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["date"]; ?></span>
+                </div>
+                <div class="label catagory">
+                  <img src="./img/icon-tag.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
+                </div>
+                <div class="label total-view">
+                  <img src="./img/icon-eye.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["views"]; ?></span>
+                </div>
                   <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
                   <a class="button">Readmore</a>
                 </div>
@@ -136,7 +158,18 @@ $kominfo = getJson($beritaKominfo);
                 <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="296px" alt="" />
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
-                  <p class="tanggal"><span>Tanggal : <?php echo $pemerintah[$i]["date"]; ?></span> </p>
+                  <div class="label post">
+                  <img src="./img/icon-calender.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["date"]; ?></span>
+                </div>
+                <div class="label catagory">
+                  <img src="./img/icon-tag.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
+                </div>
+                <div class="label total-view">
+                  <img src="./img/icon-eye.png" alt="" />
+                  <span><?php echo $pemerintah[$i]["views"]; ?></span>
+                </div>
                   <a class="button">Readmore</a>
                 </div>
               </div>

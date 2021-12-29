@@ -140,18 +140,12 @@ h6 {
   font-size: 15px;
 }
 .text-berita .deskripsi {
-  margin-bottom: 4px;
+  margin: 10px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.text-berita span {
-  background: var(--bg-orange);
-  display: inline-block;
-  color: var(--text-white);
-  border-radius: 5px;
-  padding: 3px 7px;
-}
+
 .button {
   display: inline-block;
   padding: 8px 16px;
@@ -162,6 +156,18 @@ h6 {
 }
 .button:hover {
   color: white;
+}
+.label {
+  display: flex;
+  align-items: center;
+}
+.label span {
+  font-size: 13px;
+  color: gray;
+}
+.label img {
+  margin-right: 7px;
+  width: 15px;
 }
 /* Berita hoax */
 .hoax {
