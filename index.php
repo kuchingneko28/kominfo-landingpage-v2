@@ -93,22 +93,22 @@ $kominfo = getJson($beritaKominfo);
         <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
+                <img class="berita-pict" src="<?php echo $pemerintah[$i]["menu"]["thumbnail"]; ?>" alt="" />
                 <div class="text-berita">
-                  <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
+                  <h3 class="judul"><?php echo $pemerintah[$i]["menu"]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["label"]["date"]; ?></span>
+                  <span><?php echo $pemerintah[$i]["menu"]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
+                  <span><?php echo $pemerintah[$i]["menu"]["catagory"]; ?></span>
                 </div>
                 <div class="label total-view">
                   <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["label"]["views"]; ?></span>
+                  <span><?php echo $pemerintah[$i]["menu"]["label"]["views"]; ?></span>
                 </div>
-                  <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
+                  <p class="deskripsi"><?php echo $pemerintah[$i]["menu"]["description"]; ?></p>
                   <a class="button">Readmore</a>
                 </div>
               </div>
@@ -119,22 +119,22 @@ $kominfo = getJson($beritaKominfo);
         <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
+                <img class="berita-pict" src="<?php echo $kominfo[$i]["menu"]["thumbnail"]; ?>" alt="" />
                 <div class="text-berita">
-                  <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
+                  <h3 class="judul"><?php echo $kominfo[$i]["menu"]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
+                  <span><?php echo $kominfo[$i]["menu"]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $kominfo[$i]["catagory"]; ?></span>
+                  <span><?php echo $kominfo[$i]["menu"]["catagory"]; ?></span>
                 </div>
                 <div class="label total-view">
                   <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $kominfo[$i]["label"]["views"]; ?></span>
+                  <span><?php echo $kominfo[$i]["menu"]["label"]["views"]; ?></span>
                 </div>
-                  <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
+                  <p class="deskripsi"><?php echo $kominfo[$i]["menu"]["description"]; ?></p>
                   <a class="button">Readmore</a>
                 </div>
               </div>
@@ -155,20 +155,20 @@ $kominfo = getJson($beritaKominfo);
           <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="296px" alt="" />
+                <img class="berita-pict" src="<?php echo $hoax[$i]["menu"]["thumbnail"]; ?>" height="296px" alt="" />
                 <div class="text-berita">
-                  <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
+                  <h3 class="judul"><?php echo $hoax[$i]["menu"]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
+                  <span><?php echo $hoax[$i]["menu"]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $hoax[$i]["catagory"]; ?></span>
+                  <span><?php echo $hoax[$i]["menu"]["catagory"]; ?></span>
                 </div>
                 <div class="label total-view">
                   <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
+                  <span><?php echo $hoax[$i]["menu"]["label"]["views"]; ?></span>
                 </div>
                   <a class="button">Readmore</a>
                 </div>
