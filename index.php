@@ -98,7 +98,7 @@ $kominfo = getJson($beritaKominfo);
                   <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["date"]; ?></span>
+                  <span><?php echo $pemerintah[$i]["date"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
@@ -106,7 +106,7 @@ $kominfo = getJson($beritaKominfo);
                 </div>
                 <div class="label total-view">
                   <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["views"]; ?></span>
+                  <span><?php echo $pemerintah[$i]["label"]["views"]; ?></span>
                 </div>
                   <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
                   <a class="button">Readmore</a>
@@ -124,7 +124,7 @@ $kominfo = getJson($beritaKominfo);
                   <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $kominfo[$i]["date"]; ?></span>
+                  <span><?php echo $kominfo[$i]["date"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
@@ -132,7 +132,7 @@ $kominfo = getJson($beritaKominfo);
                 </div>
                 <div class="label total-view">
                   <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $kominfo[$i]["views"]; ?></span>
+                  <span><?php echo $kominfo[$i]["label"]["views"]; ?></span>
                 </div>
                   <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
                   <a class="button">Readmore</a>
@@ -160,7 +160,7 @@ $kominfo = getJson($beritaKominfo);
                   <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $hoax[$i]["date"]; ?></span>
+                  <span><?php echo $hoax[$i]["date"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
@@ -168,7 +168,7 @@ $kominfo = getJson($beritaKominfo);
                 </div>
                 <div class="label total-view">
                   <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $hoax[$i]["views"]; ?></span>
+                  <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
                 </div>
                   <a class="button">Readmore</a>
                 </div>
