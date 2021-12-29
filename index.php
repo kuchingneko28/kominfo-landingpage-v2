@@ -98,7 +98,7 @@ $kominfo = getJson($beritaKominfo);
                   <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["date"]["date"]; ?></span>
+                  <span><?php echo $pemerintah[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
@@ -124,7 +124,7 @@ $kominfo = getJson($beritaKominfo);
                   <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $kominfo[$i]["date"]["date"]; ?></span>
+                  <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
@@ -160,7 +160,7 @@ $kominfo = getJson($beritaKominfo);
                   <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
                   <div class="label post">
                   <img src="./img/icon-calender.png" alt="" />
-                  <span><?php echo $hoax[$i]["date"]["date"]; ?></span>
+                  <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
