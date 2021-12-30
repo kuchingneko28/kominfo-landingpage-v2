@@ -209,7 +209,7 @@ $kominfo = getJson($beritaKominfo);
               <p>Terbaru dari twitter</p>
             </div>
             <div class="twitter">
-            <a class="twitter-timeline" data-width="370" data-height="400" href="https://twitter.com/kemkominfo?ref_src=twsrc%5Etfw">Tweets by kemkominfo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" data-width="400" data-height="370" href="https://twitter.com/kemkominfo?ref_src=twsrc%5Etfw">Tweets by kemkominfo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>  
           </div>
