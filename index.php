@@ -166,7 +166,7 @@ $kominfo = getJson($beritaKominfo);
                   <img src="./img/icon-eye.png" alt="" />
                   <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
                 </div>
-                  <a class="button" href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank">Readmore</a>
+                  <a class="button" href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank">Readmore</a>
                 </div>
               </div>
             </div>
