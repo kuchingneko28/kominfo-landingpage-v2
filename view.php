@@ -1,16 +1,11 @@
 <?php
 require_once "./functions/functions.php";
 // link json
-$beritaKominfo = "https://kominfo-scrap.herokuapp.com/berita-kominfo";
-$beritaPemerintah = "https://kominfo-scrap.herokuapp.com/berita-pemerintah";
-$beritaHoax = "https://kominfo-scrap.herokuapp.com/berita-hoax";
+$path = $_GET["url"];
+$url = "http://localhost:3000/get-article?url=$path";
 
 // ngambil data dari json
-$pemerintah = getJson($beritaPemerintah);
-$hoax = getJson($beritaHoax);
-$kominfo = getJson($beritaKominfo);
-
-
+$article = getJson($url);
 ?>
 <html lang="en">
   <head>
@@ -82,96 +77,11 @@ $kominfo = getJson($beritaKominfo);
     <!-- Berita -->
     <section class="berita">
       <div class="container">
-        <div class="text-awal">
-          <img class="icon" src="./img/icon-news.png" alt="" />
-          <h2>Berita terbaru</h2>
-        </div>
-        <div class="row">
           <!-- Berita pemerintah -->
-        <?php for($i = 0; $i < 3; $i++) : ?>
-            <div class="col-md-4">
-              <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
-                <div class="text-berita">
-                  <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
-                  <div class="label post">
-                  <img src="./img/icon-calendar.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["label"]["date"]; ?></span>
-                </div>
-                <div class="label catagory">
-                  <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
-                </div>
-                <div class="label total-view">
-                  <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["label"]["views"]; ?></span>
-                </div>
-                  <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
-                  <a class="button" href="view.php?url=<?php echo $pemerintah[$i]["url"] ?>" target="_blank" >Readmore</a>
-                </div>
-              </div>
-            </div>
-              <?php endfor; ?>    
-        <!-- Berita kominfo -->
-        <?php for($i = 0; $i < 3; $i++) : ?>
-            <div class="col-md-4">
-              <div class="berita-box">
-                <img class="berita-pict kominfo" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
-                <div class="text-berita">
-                  <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
-                  <div class="label post">
-                  <img src="./img/icon-calendar.png" alt="" />
-                  <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
-                </div>
-                <div class="label catagory">
-                  <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $kominfo[$i]["catagory"]; ?></span>
-                </div>
-                <div class="label total-view">
-                  <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $kominfo[$i]["label"]["views"]; ?></span>
-                </div>
-                  <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
-                  <a class="button" href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank" >Readmore</a>
-                </div>
-              </div>
-            </div>
-              <?php endfor; ?>
-            </div>
-      </div>
-    </section>
-    <!-- Hoax -->
-    <section class="hoax">
-      <div class="container">
-        <div class="text-awal">
-          <img class="icon" src="./img/icon-message.png" alt="" />
-          <h2>Laporan isu hoax</h2>
-        </div>
-        <div class="row">
-          <?php for($i = 0; $i < 3; $i++) : ?>
-            <div class="col-md-4">
-              <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="265px" alt="" />
-                <div class="text-berita">
-                  <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
-                  <div class="label post">
-                  <img src="./img/icon-calendar.png" alt="" />
-                  <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
-                </div>
-                <div class="label catagory">
-                  <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $hoax[$i]["catagory"]; ?></span>
-                </div>
-                <div class="label total-view">
-                  <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
-                </div>
-                  <a class="button" href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank">Readmore</a>
-                </div>
-              </div>
-            </div>
-              <?php endfor; ?>
-            </div>
+            <img src="<?php echo $article[0]["thumbnail"];?>" alt="">
+            <h2><?php echo $article[0]["title"];?></h2>
+            <p><?php echo $article[0]["paragraph"];?></p>
+           </div>
       </div>
     </section>
     <!-- Footer -->
