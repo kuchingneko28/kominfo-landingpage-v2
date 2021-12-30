@@ -336,11 +336,11 @@ h6 {
     position: absolute;
     width: 0px;
     height: 0px;
-    border-left: 7px solid var(--text-white);
-    border-top: 7px solid var(--text-white);
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    bottom: -10px;
+    border-left: 6px solid var(--text-white);
+    border-top: 6px solid var(--text-white);
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    bottom: -12px;
     left: 0;
   }
   .copyright {

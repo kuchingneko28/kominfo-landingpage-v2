@@ -203,7 +203,6 @@ $kominfo = getJson($beritaKominfo);
           </div>
           <div class="col-md-5">
           <div class="wrap-content hide">
-
             <div class="text-footer">
               <img class="icon" src="./img/icon-twitter.png" alt="" />
               <p>Terbaru dari twitter</p>
@@ -215,7 +214,6 @@ $kominfo = getJson($beritaKominfo);
           </div>
           <div class="col-md-3">
           <div class="wrap-content hide">
-
             <div class="text-footer">
               <img class="icon" src="./img/icon-task.png" alt="" />
               <p>Mentri Kominfo</p>
@@ -227,8 +225,6 @@ $kominfo = getJson($beritaKominfo);
             </div>  
           </div>
         </div>  
-      
-      <br>
         <hr />
         <div class="copyright">
           <p>Create with <img src="./img/icon-heart.png" width="13px" alt=""> by <a href="https://github.com/kuchingneko28" target="_blank">KuchingNeko</a></p>
