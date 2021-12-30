@@ -130,9 +130,6 @@ h6 {
   border-radius: 5px 5px 0 0;
   overflow: hidden;
 }
-.berita .berita-pict {
-  height: 240px;
-}
 .text-berita {
   padding: 10px;
 }
@@ -189,24 +186,27 @@ h6 {
   width: 100%;
   border-radius: 50px 50px 0 0;
   height: 15px;
-  top: -14px;
+  top: -13px;
 }
 .footer {
   position: relative;
   background: var(--bg-color);
-  display: flex;
   color: var(--text-white);
 }
+.footer .twitter {
+  display: none;
+}
 .logo-footer .logo {
-  margin: 25px 0;
   width: 130px;
+  margin-top: 8px;
+  margin-bottom: 25px;
 }
 .address-wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 175px;
   align-items: center;
+  height: 180px;
 }
 .address-box {
   display: flex;
@@ -230,8 +230,12 @@ h6 {
   text-align: center;
   font-size: 13px;
 }
+.footer .hide {
+  display: none;
+}
 /* Media query untuk desktop view*/
-@media screen and (min-width: 904px) {
+@media screen and (min-width: 855px) {
+  /* Hero */
   .hero-title {
     text-align: left;
   }
@@ -247,14 +251,60 @@ h6 {
     margin-left: auto;
     margin-right: unset;
   }
+  /* Berita */
+  .berita .berita-pict {
+    height: 240px;
+  }
+  .berita .kominfo {
+    height: 200px;
+  }
   .hero-title h1 {
     font-size: 36px;
   }
   .hero-title p {
     font-size: 16px;
   }
+  .footer .twitter {
+    display: block;
+    margin-left: auto;
+  }
+  .logo-footer .logo {
+    width: 130px;
+  }
   .address-wrap {
     align-items: unset;
+  }
+  .footer .hide {
+    display: block;
+  }
+  /* Footer  */
+  .text-footer {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    color: var(--text-white);
+  }
+  .text-footer::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 2px solid var(--border-color);
+  }
+  .text-footer p {
+    padding-top: 3px;
+  }
+  .text-footer .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .wrap-content {
+    margin-left: 10px;
+  }
+  .profile {
+    border-radius: 5px;
   }
   .copyright {
     justify-content: space-between;

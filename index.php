@@ -35,7 +35,7 @@ $kominfo = getJson($beritaKominfo);
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                <a class="nav-link active" aria-current="page" href="index.php">Beranda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Berita</a>
@@ -50,7 +50,6 @@ $kominfo = getJson($beritaKominfo);
           </div>
         </div>
       </nav>
-
     <!-- Hero -->
      <section class="hero">
         <div class="container">
@@ -80,9 +79,8 @@ $kominfo = getJson($beritaKominfo);
         </div>
       </section>
     </div>
-
     <!-- Berita -->
-    <section class="berita reveal">
+    <section class="berita">
       <div class="container">
         <div class="text-awal">
           <img class="icon" src="./img/icon-news.png" alt="" />
@@ -113,13 +111,12 @@ $kominfo = getJson($beritaKominfo);
                 </div>
               </div>
             </div>
-              <?php endfor; ?>
-              
+              <?php endfor; ?>    
         <!-- Berita kominfo -->
         <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
+                <img class="berita-pict kominfo" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
                   <div class="label post">
@@ -143,9 +140,8 @@ $kominfo = getJson($beritaKominfo);
             </div>
       </div>
     </section>
-    
     <!-- Hoax -->
-    <section class="hoax reveal">
+    <section class="hoax">
       <div class="container">
         <div class="text-awal">
           <img class="icon" src="./img/icon-message.png" alt="" />
@@ -155,7 +151,7 @@ $kominfo = getJson($beritaKominfo);
           <?php for($i = 0; $i < 3; $i++) : ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="295px" alt="" />
+                <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="265px" alt="" />
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
                   <div class="label post">
@@ -179,30 +175,59 @@ $kominfo = getJson($beritaKominfo);
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer reveal">
+    <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col address-wrap">
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+            <div class="wrap-content show">
+            <div class="address-wrap">
             <div class="logo-footer">
               <img class="logo" src="./img/logo-small.png" alt="" />
             </div>
-            <div class="address">
-              <div class="address-box">
-                <img src="./img/icon-map.png" alt="" />
-                <p>Jl. Medan Merdeka Barat no. 9, Jakarta 10110</p>
-              </div>
-              <div class="address-box">
-                <img src="./img/icon-phone.png" alt="" />
-                <p>(021) 3452841</p>
-              </div>
-              <div class="address-box">
-                <img src="./img/icon-email.png" alt="" />
-                <p>humas@mail.kominfo.go.id</p>
+              <div class="address">
+                <div class="address-box">
+                  <img src="./img/icon-map.png" alt="" />
+                  <p>Jl. Medan Merdeka Barat no. 9, Jakarta 10110</p>
+                </div>
+                <div class="address-box">
+                  <img src="./img/icon-phone.png" alt="" />
+                  <p>(021) 3452841</p>
+                </div>
+                <div class="address-box">
+                  <img src="./img/icon-email.png" alt="" />
+                  <p>humas@mail.kominfo.go.id</p>
+                </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <br>
+          <div class="col-md-5">
+          <div class="wrap-content hide">
+
+            <div class="text-footer">
+              <img class="icon" src="./img/icon-twitter.png" alt="" />
+              <p>Terbaru dari twitter</p>
+            </div>
+            <div class="twitter">
+              <a class="twitter-timeline" data-width="400" data-height="330" href="https://twitter.com/kemkominfo?ref_src=twsrc%5Etfw">Tweets by kemkominfo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>  
+          </div>
+          <div class="col-md-3">
+          <div class="wrap-content hide">
+
+            <div class="text-footer">
+              <img class="icon" src="./img/icon-task.png" alt="" />
+              <p>Mentri Kominfo</p>
+            </div>
+            <div class="profile">
+              <img class="profile" src="http://kominfo.go.id/images/menteri.jpeg" width="200px" alt="">
+            </div>
+            </div>  
+          </div>
+        </div>  
+      
+      <br>
         <hr />
         <div class="copyright">
           <p>Create with love by KuchingNeko</p>
