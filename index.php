@@ -1,5 +1,5 @@
 <?php
-require_once "./functions.php";
+require_once "./functions/functions.php";
 // link json
 $beritaKominfo = "https://kominfo-scrap.herokuapp.com/berita-kominfo";
 $beritaPemerintah = "https://kominfo-scrap.herokuapp.com/berita-pemerintah";
@@ -95,7 +95,7 @@ $kominfo = getJson($beritaKominfo);
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
                   <div class="label post">
-                  <img src="./img/icon-calender.png" alt="" />
+                  <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $pemerintah[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
@@ -120,7 +120,7 @@ $kominfo = getJson($beritaKominfo);
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
                   <div class="label post">
-                  <img src="./img/icon-calender.png" alt="" />
+                  <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
@@ -155,7 +155,7 @@ $kominfo = getJson($beritaKominfo);
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
                   <div class="label post">
-                  <img src="./img/icon-calender.png" alt="" />
+                  <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">

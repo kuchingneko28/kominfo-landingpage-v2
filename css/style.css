@@ -3,13 +3,12 @@
 :root {
   --bg-color: linear-gradient(95deg, rgba(56, 163, 165, 1) 0%, rgba(87, 204, 153, 1) 100%);
   --bg-berita: #f5f5f5;
-  --bg-orange: linear-gradient(95deg, rgba(255, 127, 63, 1) 0%, rgba(255, 89, 89, 1) 100%);
-  --bg-footer: #38a3a5;
   --text-white: #ffffff;
   --text-label: #6e7c7c;
-  --text-color: #22577a;
-  --shadow: rgba(87, 204, 153, 0.4);
-  --border-color: rgba(255, 127, 63, 1);
+  --text-color: #345b63;
+  --text-nama: #345b63;
+  --shadow: rgba(87, 204, 153, 0.5);
+  --border-color: #ffb085;
 }
 
 /* Basic Css */
@@ -260,7 +259,7 @@ h6 {
   }
   .berita-pict:hover {
     transform: scale(1.1);
-    opacity: 0.8;
+    opacity: 0.7;
   }
   .berita .kominfo {
     height: 200px;
@@ -290,7 +289,7 @@ h6 {
   }
   .button:hover {
     color: var(--text-white);
-    opacity: 0.8;
+    opacity: 0.7;
   }
   /* Footer  */
   .footer .hide {
@@ -329,7 +328,7 @@ h6 {
     padding: 5px 10px;
     text-align: center;
     background: var(--text-white);
-    color: #423f3e;
+    color: var(--text-nama);
     border-radius: 10px 10px 10px 0;
   }
   .copyright {
