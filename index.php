@@ -209,7 +209,7 @@ $kominfo = getJson($beritaKominfo);
               <p>Terbaru dari twitter</p>
             </div>
             <div class="twitter">
-              <a class="twitter-timeline" data-width="400" data-height="330" href="https://twitter.com/kemkominfo?ref_src=twsrc%5Etfw">Tweets by kemkominfo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="twitter-timeline" data-width="400" data-height="370" href="https://twitter.com/kemkominfo?ref_src=twsrc%5Etfw">Tweets by kemkominfo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>  
           </div>
@@ -221,6 +221,7 @@ $kominfo = getJson($beritaKominfo);
               <p>Mentri Kominfo</p>
             </div>
             <div class="profile">
+              <p class="nama">Bapak Johnny Gerard Plate, S.E.</p>
               <img class="profile" src="http://kominfo.go.id/images/menteri.jpeg" width="200px" alt="">
             </div>
             </div>  
@@ -230,7 +231,7 @@ $kominfo = getJson($beritaKominfo);
       <br>
         <hr />
         <div class="copyright">
-          <p>Create with love by KuchingNeko</p>
+          <p>Create with <img src="./img/icon-heart.png" width="13px" alt=""> by <a href="https://github.com/kuchingneko28" target="_blank">KuchingNeko</a></p>
           <p>Hak Cipta © 2021 Kementerian Komunikasi dan Informatika RI</p>
         </div>
       </div>

@@ -156,10 +156,9 @@ h6 {
   border-radius: 5px;
   background: var(--bg-color);
   text-decoration: none;
+  transition: 0.4s all;
 }
-.button:hover {
-  color: var(--text-white);
-}
+
 .label {
   display: flex;
   align-items: center;
@@ -230,6 +229,10 @@ h6 {
   text-align: center;
   font-size: 13px;
 }
+.copyright a {
+  color: var(--text-white);
+  text-decoration: none;
+}
 .footer .hide {
   display: none;
 }
@@ -274,10 +277,14 @@ h6 {
   .address-wrap {
     align-items: unset;
   }
+  .button:hover {
+    color: var(--text-white);
+    opacity: 0.8;
+  }
+  /* Footer  */
   .footer .hide {
     display: block;
   }
-  /* Footer  */
   .text-footer {
     position: relative;
     margin: 10px 0;
@@ -306,9 +313,20 @@ h6 {
   .profile {
     border-radius: 5px;
   }
+  .nama {
+    font-size: 14px;
+    padding: 5px 10px;
+    text-align: center;
+    background: var(--text-white);
+    color: #423f3e;
+    border-radius: 10px 10px 10px 0;
+  }
   .copyright {
     justify-content: space-between;
     flex-direction: row;
     align-items: unset;
+  }
+  .copyright a:hover {
+    color: var(--text-white);
   }
 }
