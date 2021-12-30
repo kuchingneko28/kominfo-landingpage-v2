@@ -329,6 +329,19 @@ h6 {
     background: var(--text-white);
     color: var(--text-color);
     border-radius: 10px 10px 10px 0;
+    position: relative;
+  }
+  .nama::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid var(--text-white);
+    border-top: 7px solid var(--text-white);
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    bottom: -10px;
+    left: 0;
   }
   .copyright {
     justify-content: space-between;

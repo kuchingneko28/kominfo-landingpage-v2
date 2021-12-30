@@ -221,7 +221,7 @@ $kominfo = getJson($beritaKominfo);
               <p>Mentri Kominfo</p>
             </div>
             <div class="profile">
-              <p class="nama">Bapak Johnny Gerard Plate, S.E.</p>
+              <p class="nama shape">Bapak Johnny Gerard Plate, S.E.</p>
               <img class="profile" src="http://kominfo.go.id/images/menteri.jpeg" width="200px" alt="">
             </div>
             </div>  
