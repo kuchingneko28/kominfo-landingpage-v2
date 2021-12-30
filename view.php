@@ -2,7 +2,7 @@
 require_once "./functions/functions.php";
 // link json
 $path = $_GET["url"];
-$url = "http://localhost:3000/get-article?url=$path";
+$url = "https://kominfo-scrap.herokuapp.com/get-article?url=$path";
 
 // ngambil data dari json
 $article = getJson($url);
