@@ -1,5 +1,5 @@
 <?php
-require_once "./functions/functions.php";
+require_once "./requires/function.php";
 // link json
 $beritaKominfo = "https://kominfo-scrap.herokuapp.com/berita-kominfo";
 $beritaPemerintah = "https://kominfo-scrap.herokuapp.com/berita-pemerintah";
@@ -9,7 +9,6 @@ $beritaHoax = "https://kominfo-scrap.herokuapp.com/berita-hoax";
 $pemerintah = getJson($beritaPemerintah);
 $hoax = getJson($beritaHoax);
 $kominfo = getJson($beritaKominfo);
-
 ?>
 <html lang="en">
   <head>
@@ -87,12 +86,20 @@ $kominfo = getJson($beritaKominfo);
         </div>
         <div class="row">
           <!-- Berita pemerintah -->
-        <?php for ($i = 0;$i < 3;$i++): ?>
+        <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-              <a href="view.php?url=<?php echo $pemerintah[$i]["url"] ?>" target="_blank"><img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" /></a>
+              <a href="view.php?url=<?php echo $pemerintah[$i][
+                  "url"
+              ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $pemerintah[
+    $i
+]["thumbnail"]; ?>" alt="" /></a>
                 <div class="text-berita">
-                <a href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3></a>
+                <a href="view.php?url=<?php echo $hoax[$i][
+                    "url"
+                ]; ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[
+    $i
+]["title"]; ?></h3></a>
                   <div class="label post">
                   <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $pemerintah[$i]["label"]["date"]; ?></span>
@@ -105,19 +112,31 @@ $kominfo = getJson($beritaKominfo);
                   <img src="./img/icon-eye.png" alt="" />
                   <span><?php echo $pemerintah[$i]["label"]["views"]; ?></span>
                 </div>
-                  <p class="deskripsi"><?php echo $pemerintah[$i]["description"]; ?></p>
-                  <a class="button" href="view.php?url=<?php echo $pemerintah[$i]["url"] ?>" target="_blank" >Readmore</a>
+                  <p class="deskripsi"><?php echo $pemerintah[$i][
+                      "description"
+                  ]; ?></p>
+                  <a class="button" href="view.php?url=<?php echo $pemerintah[
+                      $i
+                  ]["url"]; ?>" target="_blank" >Readmore</a>
                 </div>
               </div>
             </div>
-              <?php  endfor; ?>    
+              <?php endfor; ?>    
         <!-- Berita kominfo -->
-        <?php for ($i = 0;$i < 3;$i++): ?>
+        <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-              <a href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank"><img class="berita-pict kominfo" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" /></a>
+              <a href="view.php?url=<?php echo $kominfo[$i][
+                  "url"
+              ]; ?>" target="_blank"><img class="berita-pict kominfo" src="<?php echo $kominfo[
+    $i
+]["thumbnail"]; ?>" alt="" /></a>
                 <div class="text-berita">
-                <a href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank"><h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3></a>
+                <a href="view.php?url=<?php echo $kominfo[$i][
+                    "url"
+                ]; ?>" target="_blank"><h3 class="judul"><?php echo $kominfo[
+    $i
+]["title"]; ?></h3></a>
                   <div class="label post">
                   <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
@@ -130,8 +149,12 @@ $kominfo = getJson($beritaKominfo);
                   <img src="./img/icon-eye.png" alt="" />
                   <span><?php echo $kominfo[$i]["label"]["views"]; ?></span>
                 </div>
-                  <p class="deskripsi"><?php echo $kominfo[$i]["description"]; ?></p>
-                  <a class="button" href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank" >Readmore</a>
+                  <p class="deskripsi"><?php echo $kominfo[$i][
+                      "description"
+                  ]; ?></p>
+                  <a class="button" href="view.php?url=<?php echo $kominfo[$i][
+                      "url"
+                  ]; ?>" target="_blank" >Readmore</a>
                 </div>
               </div>
             </div>
@@ -147,12 +170,20 @@ $kominfo = getJson($beritaKominfo);
           <h2>Laporan isu hoax</h2>
         </div>
         <div class="row">
-          <?php for ($i = 0;$i < 3;$i++): ?>
+          <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-              <a href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank"><img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="265px" alt="" /></a>
+              <a href="view.php?url=<?php echo $hoax[$i][
+                  "url"
+              ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $hoax[
+    $i
+]["thumbnail"]; ?>" height="265px" alt="" /></a>
                 <div class="text-berita">
-                <a href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank"><h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3></a>
+                <a href="view.php?url=<?php echo $hoax[$i][
+                    "url"
+                ]; ?>" target="_blank"><h3 class="judul"><?php echo $hoax[$i][
+    "title"
+]; ?></h3></a>
                   <div class="label">
                   <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
@@ -165,7 +196,9 @@ $kominfo = getJson($beritaKominfo);
                   <img src="./img/icon-eye.png" alt="" />
                   <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
                 </div>
-                  <a class="button" href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank">Readmore</a>
+                  <a class="button" href="view.php?url=<?php echo $hoax[$i][
+                      "url"
+                  ]; ?>" target="_blank">Readmore</a>
                 </div>
               </div>
             </div>

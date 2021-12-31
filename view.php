@@ -1,17 +1,16 @@
 <?php
-require_once "./functions/functions.php";
+require_once "./requires/function.php";
 // link json
-if(isset($_GET["url"])){
-  // ngambil data dari json
-  $path = $_GET["url"];
-  $url = "http://kominfo-scrap.herokuapp.com/get-article?url=$path";
-  $article = getJson($url);
+if (isset($_GET["url"])) {
+    // ngambil data dari json
+    $path = $_GET["url"];
+    $url = "http://kominfo-scrap.herokuapp.com/get-article?url=$path";
+    $article = getJson($url);
 
-  $para = str_replace('.', '.<br><br>', $article[0]["paragraph"],$i) ;
-
-}else {
-  header("Location:index.php");
-  die();
+    $para = str_replace(".", ".<br><br>", $article[0]["paragraph"], $i);
+} else {
+    header("Location:index.php");
+    die();
 }
 ?>
 <html lang="en">
@@ -87,7 +86,7 @@ if(isset($_GET["url"])){
         <div class="row justify-content-center align-items-center">
         <div class="col-md-8 post">
         <div class="title">
-          <h2><?php echo $article[0]["title"];?></h2>
+          <h2><?php echo $article[0]["title"]; ?></h2>
           <div class="label-wrap">
             <div class="label">
               <img src="./img/icon-calendar.png" alt="" />
@@ -104,8 +103,10 @@ if(isset($_GET["url"])){
               </div>
         </div> 
           <!-- Berita pemerintah -->
-          <img class="post-thumbnail" src="<?php echo $article[0]["thumbnail"];?>" alt="">
-          <p><?php echo $para;?></p>
+          <img class="post-thumbnail" src="<?php echo $article[0][
+              "thumbnail"
+          ]; ?>" alt="">
+          <p><?php echo $para; ?></p>
         </div>
         </div>
       </div>
