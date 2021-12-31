@@ -234,6 +234,27 @@ h6 {
 .footer .hide {
   display: none;
 }
+
+/* Postingan */
+
+.title {
+  margin-bottom: 20px;
+}
+.post h2 {
+  font-size: 25px;
+}
+.post p {
+  line-height: 35px;
+}
+.post-thumbnail {
+  width: 100%;
+}
+.label-wrap {
+  display: flex;
+}
+.label-wrap .label {
+  margin-right: 10px;
+}
 /* Media query untuk desktop view*/
 @media screen and (min-width: 855px) {
   /* Hero */

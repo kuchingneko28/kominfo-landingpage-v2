@@ -1,11 +1,18 @@
 <?php
 require_once "./functions/functions.php";
 // link json
-$path = $_GET["url"];
-$url = "https://kominfo-scrap.herokuapp.com/get-article?url=$path";
+if(isset($_GET["url"])){
+  // ngambil data dari json
+  $path = $_GET["url"];
+  $url = "http://kominfo-scrap.herokuapp.com/get-article?url=$path";
+  $article = getJson($url);
 
-// ngambil data dari json
-$article = getJson($url);
+  $para = str_replace('.', '.<br><br>', $article[0]["paragraph"],$i) ;
+
+}else {
+  header("Location:index.php");
+  die();
+}
 ?>
 <html lang="en">
   <head>
@@ -77,11 +84,32 @@ $article = getJson($url);
     <!-- Berita -->
     <section class="berita">
       <div class="container">
+        <div class="row justify-content-center align-items-center">
+
+        <div class="col-md-8 post">
+        <div class="title">
+          <h2><?php echo $article[0]["title"];?></h2>
+          <div class="label-wrap">
+            <div class="label">
+              <img src="./img/icon-calendar.png" alt="" />
+              <span><?php echo $article[0]["date"]; ?></span>
+                </div>
+                <div class="label">
+                  <img src="./img/icon-tag.png" alt="" />
+                  <span><?php echo $article[0]["catagory"]; ?></span>
+                </div>
+                <div class="label">
+                  <img src="./img/icon-eye.png" alt="" />
+                  <span><?php echo $article[0]["views"]; ?></span>
+                </div>
+              </div>
+        </div> 
           <!-- Berita pemerintah -->
-            <img src="<?php echo $article[0]["thumbnail"];?>" alt="">
-            <h2><?php echo $article[0]["title"];?></h2>
-            <p><?php echo $article[0]["paragraph"];?></p>
-           </div>
+          <img class="post-thumbnail" src="<?php echo $article[0]["thumbnail"];?>" alt="">
+          <p><?php echo $para;?></p>
+        </div>
+        </div>
+      </div>
       </div>
     </section>
     <!-- Footer -->

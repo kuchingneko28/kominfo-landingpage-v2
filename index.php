@@ -154,7 +154,7 @@ $kominfo = getJson($beritaKominfo);
                 <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="265px" alt="" />
                 <div class="text-berita">
                   <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
-                  <div class="label post">
+                  <div class="label">
                   <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
                 </div>
