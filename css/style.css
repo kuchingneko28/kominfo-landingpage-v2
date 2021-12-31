@@ -139,6 +139,9 @@ h6 {
 .text-berita p {
   font-size: 15px;
 }
+.text-berita a {
+  text-decoration: none;
+}
 .text-berita .deskripsi {
   margin-top: 10px;
   white-space: nowrap;
@@ -238,13 +241,13 @@ h6 {
 /* Postingan */
 
 .title {
-  margin-bottom: 20px;
+  margin: 25px 0;
 }
 .post h2 {
-  font-size: 25px;
+  font-size: 26px;
 }
 .post p {
-  line-height: 35px;
+  line-height: 28px;
 }
 .post-thumbnail {
   width: 100%;
@@ -255,6 +258,7 @@ h6 {
 .label-wrap .label {
   margin-right: 10px;
 }
+
 /* Media query untuk desktop view*/
 @media screen and (min-width: 855px) {
   /* Hero */

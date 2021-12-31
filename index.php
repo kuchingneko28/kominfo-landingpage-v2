@@ -10,7 +10,6 @@ $pemerintah = getJson($beritaPemerintah);
 $hoax = getJson($beritaHoax);
 $kominfo = getJson($beritaKominfo);
 
-
 ?>
 <html lang="en">
   <head>
@@ -88,12 +87,12 @@ $kominfo = getJson($beritaKominfo);
         </div>
         <div class="row">
           <!-- Berita pemerintah -->
-        <?php for($i = 0; $i < 3; $i++) : ?>
+        <?php for ($i = 0;$i < 3;$i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" />
+              <a href="view.php?url=<?php echo $pemerintah[$i]["url"] ?>" target="_blank"><img class="berita-pict" src="<?php echo $pemerintah[$i]["thumbnail"]; ?>" alt="" /></a>
                 <div class="text-berita">
-                  <h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3>
+                <a href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[$i]["title"]; ?></h3></a>
                   <div class="label post">
                   <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $pemerintah[$i]["label"]["date"]; ?></span>
@@ -111,14 +110,14 @@ $kominfo = getJson($beritaKominfo);
                 </div>
               </div>
             </div>
-              <?php endfor; ?>    
+              <?php  endfor; ?>    
         <!-- Berita kominfo -->
-        <?php for($i = 0; $i < 3; $i++) : ?>
+        <?php for ($i = 0;$i < 3;$i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict kominfo" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" />
+              <a href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank"><img class="berita-pict kominfo" src="<?php echo $kominfo[$i]["thumbnail"]; ?>" alt="" /></a>
                 <div class="text-berita">
-                  <h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3>
+                <a href="view.php?url=<?php echo $kominfo[$i]["url"] ?>" target="_blank"><h3 class="judul"><?php echo $kominfo[$i]["title"]; ?></h3></a>
                   <div class="label post">
                   <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
@@ -148,12 +147,12 @@ $kominfo = getJson($beritaKominfo);
           <h2>Laporan isu hoax</h2>
         </div>
         <div class="row">
-          <?php for($i = 0; $i < 3; $i++) : ?>
+          <?php for ($i = 0;$i < 3;$i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-                <img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="265px" alt="" />
+              <a href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank"><img class="berita-pict" src="<?php echo $hoax[$i]["thumbnail"]; ?>" height="265px" alt="" /></a>
                 <div class="text-berita">
-                  <h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3>
+                <a href="view.php?url=<?php echo $hoax[$i]["url"] ?>" target="_blank"><h3 class="judul"><?php echo $hoax[$i]["title"]; ?></h3></a>
                   <div class="label">
                   <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
