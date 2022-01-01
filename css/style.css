@@ -173,10 +173,11 @@ h6 {
   margin-right: 7px;
   width: 15px;
 }
-/* Berita hoax */
-.hoax {
+/* Berita hoax & Siaran Pers */
+.hoax,
+.siaran-pers {
   background: var(--bg-berita);
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 /* Footer */
 .footer::before {

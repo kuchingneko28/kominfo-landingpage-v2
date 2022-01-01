@@ -4,11 +4,13 @@ require_once "./requires/function.php";
 $beritaKominfo = "https://kominfo-scrap.herokuapp.com/berita-kominfo";
 $beritaPemerintah = "https://kominfo-scrap.herokuapp.com/berita-pemerintah";
 $beritaHoax = "https://kominfo-scrap.herokuapp.com/berita-hoax";
+$siaranPers = "https://kominfo-scrap.herokuapp.com/siaran-pers";
 
 // ngambil data dari json
 $pemerintah = getJson($beritaPemerintah);
 $hoax = getJson($beritaHoax);
 $kominfo = getJson($beritaKominfo);
+$siaran = getJson($siaranPers);
 ?>
 <html lang="en">
   <head>
@@ -155,6 +157,53 @@ $kominfo = getJson($beritaKominfo);
                   <a class="button" href="view.php?url=<?php echo $kominfo[$i][
                       "url"
                   ]; ?>" target="_blank" >Readmore</a>
+                </div>
+              </div>
+            </div>
+              <?php endfor; ?>
+            </div>
+      </div>
+    </section>
+    <!-- Siaran Pers -->
+    <section class="siaran-pers">
+      <div class="container">
+        <div class="text-awal">
+          <img class="icon" src="./img/icon-megaphone.png" alt="" />
+          <h2>Siaran Pers</h2>
+        </div>
+        <div class="row">
+          <?php for ($i = 0; $i < 3; $i++): ?>
+            <div class="col-md-4">
+              <div class="berita-box">
+              <a href="view.php?url=<?php echo $siaran[$i][
+                  "url"
+              ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $siaran[
+    $i
+]["thumbnail"]; ?>" height="265px" alt="" /></a>
+                <div class="text-berita">
+                <a href="view.php?url=<?php echo $siaran[$i][
+                    "url"
+                ]; ?>" target="_blank"><h3 class="judul"><?php echo $siaran[$i][
+    "title"
+]; ?></h3></a>
+                  <div class="label">
+                  <img src="./img/icon-calendar.png" alt="" />
+                  <span><?php echo $siaran[$i]["label"]["date"]; ?></span>
+                </div>
+                <div class="label catagory">
+                  <img src="./img/icon-tag.png" alt="" />
+                  <span><?php echo $siaran[$i]["catagory"]; ?></span>
+                </div>
+                <div class="label total-view">
+                  <img src="./img/icon-eye.png" alt="" />
+                  <span><?php echo $siaran[$i]["label"]["views"]; ?></span>
+                </div>
+                <p class="deskripsi"><?php echo $siaran[$i][
+                      "description"
+                  ]; ?></p>
+                  <a class="button" href="view.php?url=<?php echo $siaran[$i][
+                      "url"
+                  ]; ?>" target="_blank">Readmore</a>
                 </div>
               </div>
             </div>
