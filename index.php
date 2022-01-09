@@ -1,5 +1,5 @@
 <?php
-require_once "./requires/function.php";
+require_once "./includes/function.php";
 // link json
 $beritaKominfo = "https://kominfo-scrap.herokuapp.com/berita-kominfo";
 $beritaPemerintah = "https://kominfo-scrap.herokuapp.com/berita-pemerintah";

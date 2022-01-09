@@ -1,5 +1,5 @@
 <?php
-require_once "./requires/function.php";
+require_once "./includes/function.php";
 // link json
 if (isset($_GET["url"])) {
     // ngambil data dari json

@@ -10,5 +10,5 @@ sr.reveal(".hero-img", {
   distance: "-100px",
   origin: "bottom",
   duration: 1000,
-  delay: 1400,
+  delay: 1500,
 });
