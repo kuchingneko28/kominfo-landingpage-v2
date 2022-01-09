@@ -324,19 +324,19 @@ $siaran = getJson($siaranPers);
       distance: "-50px",
       origin: "bottom",
       duration: 1000,
-      delay: 900,
+      delay: 1000,
     });
     sr.reveal(" .text-awal", {
       distance: "50px",
       origin: "left",
       duration: 1000,
-      delay: 1300,
+      delay: 1500,
     });
     sr.reveal(".berita-box", {
       distance: "50px",
       origin: "left",
       duration: 1000,
-      delay: 1900,
+      delay: 2000,
     });
     </script>
   </body>
