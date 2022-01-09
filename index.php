@@ -304,8 +304,8 @@ $siaran = getJson($siaranPers);
         </div>  
         <hr />
         <div class="copyright">
-          <p>Create with <img src="./img/icon-heart.png" width="13px" alt=""> by <a href="https://github.com/kuchingneko28" target="_blank">KuchingNeko</a></p>
           <p>Hak Cipta © 2021 Kementerian Komunikasi dan Informatika RI</p>
+          <p>Create with <img src="./img/icon-heart.png" width="13px" alt=""> by <a href="https://github.com/kuchingneko28" target="_blank">KuchingNeko</a></p>
         </div>
       </div>
     </footer>

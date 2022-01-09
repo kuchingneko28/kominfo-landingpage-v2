@@ -166,9 +166,8 @@ h6 {
   margin-right: 7px;
   width: 15px;
 }
-/* Berita hoax & Siaran Pers */
-.hoax,
-.siaran-pers {
+/* Berita hoax */
+.hoax {
   background: var(--bg-berita);
   padding-bottom: 25px;
 }
