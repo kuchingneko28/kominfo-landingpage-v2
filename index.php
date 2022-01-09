@@ -103,18 +103,28 @@ $siaran = getJson($siaranPers);
                 ]; ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[
     $i
 ]["title"]; ?></h3></a>
-                  <div class="label post">
-                  <img src="./img/icon-calendar.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["label"]["date"]; ?></span>
+                  <div class="label">
+                    <div class="post">
+                      <img src="./img/icon-calendar.png" alt="" />
+                      <span><?php echo $pemerintah[$i]["label"][
+                          "date"
+                      ]; ?></span>
+                    </div>
                 </div>
-                <div class="label catagory">
-                  <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
-                </div>
-                <div class="label total-view">
-                  <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $pemerintah[$i]["label"]["views"]; ?></span>
-                </div>
+                <div class="label">
+                  <div class="catagory">
+                    <img src="./img/icon-tag.png" alt="" />
+                    <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
+                  </div>
+                  </div>
+                <div class="label">
+                  <div class="total-view">
+                    <img src="./img/icon-eye.png" alt="" />
+                    <span><?php echo $pemerintah[$i]["label"][
+                        "views"
+                    ]; ?></span>
+                  </div>
+                  </div>
                   <p class="deskripsi"><?php echo substr(
                       $pemerintah[$i]["description"],
                       0,
@@ -143,18 +153,24 @@ $siaran = getJson($siaranPers);
                 ]; ?>" target="_blank"><h3 class="judul"><?php echo $kominfo[
     $i
 ]["title"]; ?></h3></a>
-                  <div class="label post">
-                  <img src="./img/icon-calendar.png" alt="" />
-                  <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
+                  <div class="label">
+                    <div class="post">
+                      <img src="./img/icon-calendar.png" alt="" />
+                      <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
+                    </div>
                 </div>
-                <div class="label catagory">
-                  <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $kominfo[$i]["catagory"]; ?></span>
-                </div>
-                <div class="label total-view">
-                  <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $kominfo[$i]["label"]["views"]; ?></span>
-                </div>
+                <div class="label">
+                  <div class="catagory">
+                    <img src="./img/icon-tag.png" alt="" />
+                    <span><?php echo $kominfo[$i]["catagory"]; ?></span>
+                  </div>
+                  </div>
+                <div class="label">
+                  <div class="total-view">
+                    <img src="./img/icon-eye.png" alt="" />
+                    <span><?php echo $kominfo[$i]["label"]["views"]; ?></span>
+                  </div>
+                  </div>
                   <p class="deskripsi"><?php echo substr(
                       $kominfo[$i]["description"],
                       0,
@@ -184,17 +200,23 @@ $siaran = getJson($siaranPers);
     "title"
 ]; ?></h3></a>
                   <div class="label">
-                    <img src="./img/icon-calendar.png" alt="" />
-                  <span><?php echo $siaran[$i]["label"]["date"]; ?></span>
+                    <div class="post">
+                      <img src="./img/icon-calendar.png" alt="" />
+                      <span><?php echo $siaran[$i]["label"]["date"]; ?></span>
+                    </div>
                 </div>
-                <div class="label catagory">
-                  <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $siaran[$i]["catagory"]; ?></span>
-                </div>
-                <div class="label total-view">
-                  <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $siaran[$i]["label"]["views"]; ?></span>
-                </div>
+                <div class="label">
+                  <div class="catagory">
+                    <img src="./img/icon-tag.png" alt="" />
+                    <span><?php echo $siaran[$i]["catagory"]; ?></span>
+                  </div>
+                  </div>
+                <div class="label">
+                  <div class="total-view">
+                    <img src="./img/icon-eye.png" alt="" />
+                    <span><?php echo $siaran[$i]["label"]["views"]; ?></span>
+                  </div>
+                  </div>
                 <p class="deskripsi"><?php echo substr(
                     $siaran[$i]["description"],
                     0,
@@ -233,17 +255,23 @@ $siaran = getJson($siaranPers);
     "title"
 ]; ?></h3></a>
                   <div class="label">
-                    <img src="./img/icon-calendar.png" alt="" />
-                    <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
+                    <div class="post">
+                      <img src="./img/icon-calendar.png" alt="" />
+                      <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
+                    </div>
                 </div>
-                <div class="label catagory">
-                  <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $hoax[$i]["catagory"]; ?></span>
-                </div>
-                <div class="label total-view">
-                  <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
-                </div>
+                <div class="label">
+                  <div class="catagory">
+                    <img src="./img/icon-tag.png" alt="" />
+                    <span><?php echo $hoax[$i]["catagory"]; ?></span>
+                  </div>
+                  </div>
+                <div class="label">
+                  <div class="total-view">
+                    <img src="./img/icon-eye.png" alt="" />
+                    <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
+                  </div>
+                  </div>
                   <a class="button" href="view.php?url=<?php echo $hoax[$i][
                       "url"
                   ]; ?>" target="_blank">Readmore</a>
