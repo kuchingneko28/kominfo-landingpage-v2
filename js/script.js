@@ -4,11 +4,24 @@ sr.reveal(".hero-title", {
   distance: "-100px",
   origin: "bottom",
   duration: 1000,
-  delay: 700,
+  delay: 400,
 });
 sr.reveal(".hero-img", {
   distance: "-100px",
   origin: "bottom",
   duration: 1000,
-  delay: 1500,
+  delay: 600,
+});
+
+sr.reveal(".text-awal", {
+  distance: "100px",
+  origin: "left",
+  duration: 1000,
+  delay: 700,
+});
+sr.reveal(".berita-box", {
+  distance: "100px",
+  origin: "left",
+  duration: 1000,
+  delay: 800,
 });
