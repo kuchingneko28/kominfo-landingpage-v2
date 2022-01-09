@@ -1,14 +1,14 @@
 const sr = ScrollReveal();
 
 sr.reveal(".hero-title", {
-  distance: "-50px",
+  distance: "-100px",
   origin: "bottom",
   duration: 1000,
   delay: 500,
 });
 sr.reveal(".hero-img", {
-  distance: "-50px",
+  distance: "-100px",
   origin: "bottom",
   duration: 1000,
-  delay: 750,
+  delay: 800,
 });
