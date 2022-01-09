@@ -255,7 +255,7 @@ $siaran = getJson($siaranPers);
     "title"
 ]; ?></h3></a>
                   <div class="label">
-                    <div class="post">
+                    <div class="date">
                       <img src="./img/icon-calendar.png" alt="" />
                       <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
                     </div>

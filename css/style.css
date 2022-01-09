@@ -154,25 +154,20 @@ h6 {
 }
 
 .label {
-  padding: 5px 10px;
+  padding: 4px 8px;
   margin: 10px 0;
   border-radius: 10px;
   background: var(--bg-color);
 }
-.post,
-.catagory,
-.total-view {
-  display: flex;
-  align-items: center;
-}
+
 .label span {
   font-size: 12.5px;
   margin-top: 2px;
   color: var(--text-white);
 }
 .label img {
-  margin-right: 7px;
-  width: 16px;
+  margin-right: 4px;
+  width: 17px;
 }
 /* Berita hoax */
 .hoax {
