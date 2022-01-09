@@ -330,7 +330,7 @@ $siaran = getJson($siaranPers);
       distance: "100px",
       origin: "left",
       duration: 1000,
-      delay: 1000,
+      delay: 800,
     });
 
     </script>
