@@ -4,7 +4,7 @@ sr.reveal(".hero-title", {
   distance: "-100px",
   origin: "bottom",
   duration: 1000,
-  delay: 400,
+  delay: 450,
 });
 sr.reveal(".hero-img", {
   distance: "-100px",
