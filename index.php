@@ -20,8 +20,6 @@ $siaran = getJson($siaranPers);
     <link rel="shortcut icon" href="https://kominfo.go.id/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./js/app.js"></script>
     <title>Kominfo - Wangy Wangy</title>
   </head>
   <body>
@@ -52,7 +50,7 @@ $siaran = getJson($siaranPers);
           </div>
         </div>
       </nav>
-    <!-- Hero -->
+      <!-- Hero -->
      <section class="hero">
         <div class="container">
           <div class="row">
@@ -182,7 +180,7 @@ $siaran = getJson($siaranPers);
     "title"
 ]; ?></h3></a>
                   <div class="label">
-                  <img src="./img/icon-calendar.png" alt="" />
+                    <img src="./img/icon-calendar.png" alt="" />
                   <span><?php echo $siaran[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
@@ -219,9 +217,9 @@ $siaran = getJson($siaranPers);
           <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-              <a href="view.php?url=<?php echo $hoax[$i][
-                  "url"
-              ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $hoax[
+                <a href="view.php?url=<?php echo $hoax[$i][
+                    "url"
+                ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $hoax[
     $i
 ]["thumbnail"]; ?>"  alt="" /></a>
                 <div class="text-berita">
@@ -229,10 +227,10 @@ $siaran = getJson($siaranPers);
                     "url"
                 ]; ?>" target="_blank"><h3 class="judul"><?php echo $hoax[$i][
     "title"
-  ]; ?></h3></a>
+]; ?></h3></a>
                   <div class="label">
-                  <img src="./img/icon-calendar.png" alt="" />
-                  <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
+                    <img src="./img/icon-calendar.png" alt="" />
+                    <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
                 </div>
                 <div class="label catagory">
                   <img src="./img/icon-tag.png" alt="" />
@@ -243,14 +241,14 @@ $siaran = getJson($siaranPers);
                   <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
                 </div>
                   <a class="button" href="view.php?url=<?php echo $hoax[$i][
-                    "url"
+                      "url"
                   ]; ?>" target="_blank">Readmore</a>
                 </div>
               </div>
             </div>
-              <?php endfor; ?>
+            <?php endfor; ?>
             </div>
-      </div>
+          </div>
     </section>
     <!-- Footer -->
     <footer class="footer">
@@ -286,7 +284,7 @@ $siaran = getJson($siaranPers);
               <p>Terbaru dari twitter</p>
             </div>
             <div class="twitter">
-            <a class="twitter-timeline" data-width="400" data-height="370" href="https://twitter.com/kemkominfo?ref_src=twsrc%5Etfw">Tweets by kemkominfo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="twitter-timeline" data-width="400" data-height="370" href="https://twitter.com/kemkominfo?ref_src=twsrc%5Etfw">Tweets by kemkominfo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>  
           </div>
@@ -312,5 +310,29 @@ $siaran = getJson($siaranPers);
     </footer>
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+    const sr = ScrollReveal();
+
+    sr.reveal(".hero-title", {
+      distance: "-100px",
+      origin: "bottom",
+      duration: 800,
+      delay: 500,
+    });
+    sr.reveal(".hero-img", {
+      distance: "-100px",
+      origin: "bottom",
+      duration: 1000,
+      delay: 500,
+    });
+    sr.reveal(".berita-box", {
+      distance: "100px",
+      origin: "left",
+      duration: 900,
+      delay: 500,
+    });
+
+    </script>
   </body>
 </html>
