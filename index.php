@@ -21,7 +21,6 @@ $siaran = getJson($siaranPers);
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./js/script.js"></script>
     <title>Kominfo - Wangy Wangy</title>
   </head>
   <body>
@@ -93,22 +92,22 @@ $siaran = getJson($siaranPers);
           <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
-              <a href="view.php?url=<?php echo $pemerintah[$i][
+                <a href="view.php?url=<?php echo $pemerintah[$i][
                   "url"
               ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $pemerintah[
     $i
 ]["thumbnail"]; ?>" alt="" /></a>
                 <div class="text-berita">
-                <a href="view.php?url=<?php echo $hoax[$i][
+                  <a href="view.php?url=<?php echo $hoax[$i][
                     "url"
-                ]; ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[
-    $i
+                  ]; ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[
+                    $i
 ]["title"]; ?></h3></a>
-                  <div class="label">
+<div class="label">
                     <div class="post">
                       <img src="./img/icon-calendar.png" alt="" />
                       <span><?php echo $pemerintah[$i]["label"][
-                          "date"
+                        "date"
                       ]; ?></span>
                     </div>
                 </div>
@@ -184,7 +183,7 @@ $siaran = getJson($siaranPers);
               </div>
             </div>
               <?php endfor; ?>
-
+              
               <!-- Siaran Pers -->
               <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
@@ -219,7 +218,7 @@ $siaran = getJson($siaranPers);
                   </div>
                   </div>
                 <p class="deskripsi"><?php echo substr(
-                    $siaran[$i]["description"],
+                  $siaran[$i]["description"],
                     0,
                     105
                 ) . "..."; ?></p>
@@ -291,7 +290,7 @@ $siaran = getJson($siaranPers);
             <div class="wrap-content show">
             <div class="address-wrap">
               <div class="logo-footer">
-              <img class="logo" src="./img/logo-small.png" alt="" />
+                <img class="logo" src="./img/logo-small.png" alt="" />
             </div>
               <div class="address">
                 <div class="address-box">
@@ -322,7 +321,7 @@ $siaran = getJson($siaranPers);
           </div>  
           </div>
           <div class="col-md-3">
-          <div class="wrap-content hide">
+            <div class="wrap-content hide">
             <div class="text-footer">
               <img class="icon" src="./img/icon-task.png" alt="" />
               <p>Mentri Kominfo</p>
@@ -343,5 +342,6 @@ $siaran = getJson($siaranPers);
     </footer>
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
