@@ -142,13 +142,6 @@ h6 {
 .text-berita a {
   text-decoration: none;
 }
-.text-berita .deskripsi {
-  margin-top: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .button {
   display: inline-block;
   padding: 8px 16px;
@@ -279,19 +272,17 @@ h6 {
     margin-right: unset;
   }
   /* Berita */
-  .berita .berita-pict {
-    height: 240px;
-  }
   .berita-pict:hover {
     transform: scale(1.1);
     opacity: 0.7;
   }
-  .berita .kominfo {
-    height: 200px;
-  }
   .berita-pict {
+    height: 215px;
     transform: scale(1);
     transition: 0.5s all;
+  }
+  .hoax .berita-pict {
+    height: 300px;
   }
   .berita-box {
     overflow: hidden;
