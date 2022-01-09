@@ -315,24 +315,29 @@ $siaran = getJson($siaranPers);
     const sr = ScrollReveal();
 
     sr.reveal(".hero-title", {
-      distance: "-100px",
+      distance: "-50px",
       origin: "bottom",
       duration: 1000,
       delay: 1000,
     });
     sr.reveal(".hero-img", {
-      distance: "-100px",
+      distance: "-50px",
       origin: "bottom",
-      duration: 2000,
-      delay: 2000,
+      duration: 1000,
+      delay: 1600,
     });
-    sr.reveal(".berita-box", {
-      distance: "100px",
+    sr.reveal(" .text-awal", {
+      distance: "50px",
       origin: "left",
       duration: 1000,
-      delay: 800,
+      delay: 900,
     });
-
+    sr.reveal(".berita-box", {
+      distance: "50px",
+      origin: "left",
+      duration: 1000,
+      delay: 1200,
+    });
     </script>
   </body>
 </html>
