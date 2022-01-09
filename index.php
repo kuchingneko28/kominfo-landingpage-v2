@@ -311,33 +311,6 @@ $siaran = getJson($siaranPers);
     </footer>
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script>
-    const sr = ScrollReveal();
-
-    sr.reveal(".hero-title", {
-      distance: "-50px",
-      origin: "bottom",
-      duration: 1000,
-      delay: 500,
-    });
-    sr.reveal(".hero-img", {
-      distance: "-50px",
-      origin: "bottom",
-      duration: 1000,
-      delay: 1000,
-    });
-    sr.reveal(" .text-awal", {
-      distance: "50px",
-      origin: "left",
-      duration: 1000,
-      delay: 1500,
-    });
-    sr.reveal(".berita-box", {
-      distance: "50px",
-      origin: "left",
-      duration: 1000,
-      delay: 2000,
-    });
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
