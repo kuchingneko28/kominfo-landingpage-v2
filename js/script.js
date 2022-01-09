@@ -3,13 +3,13 @@ const sr = ScrollReveal();
 sr.reveal(".hero-title", {
   distance: "-50px",
   origin: "bottom",
-  duration: 500,
+  duration: 700,
   delay: 300,
 });
 sr.reveal(".hero-img", {
   distance: "-50px",
   origin: "bottom",
-  duration: 500,
+  duration: 700,
   delay: 500,
 });
 sr.reveal(" .text-awal", {
