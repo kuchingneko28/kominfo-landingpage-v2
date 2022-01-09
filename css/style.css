@@ -286,6 +286,10 @@ h6 {
   .berita-box {
     overflow: hidden;
   }
+  .judul:hover {
+    transition: 0.5s all;
+    opacity: 0.7;
+  }
   .hero-title h1 {
     font-size: 36px;
   }

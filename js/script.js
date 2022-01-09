@@ -3,24 +3,24 @@ const sr = ScrollReveal();
 sr.reveal(".hero-title", {
   distance: "-50px",
   origin: "bottom",
-  duration: 800,
-  delay: 200,
+  duration: 500,
+  delay: 300,
 });
 sr.reveal(".hero-img", {
   distance: "-50px",
   origin: "bottom",
-  duration: 800,
+  duration: 500,
   delay: 500,
 });
 sr.reveal(" .text-awal", {
   distance: "50px",
   origin: "left",
-  duration: 800,
+  duration: 700,
   delay: 700,
 });
 sr.reveal(".berita-box", {
   distance: "50px",
   origin: "left",
-  duration: 800,
+  duration: 900,
   delay: 900,
 });

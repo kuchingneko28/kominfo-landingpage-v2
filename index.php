@@ -39,7 +39,7 @@ $siaran = getJson($siaranPers);
                 <a class="nav-link active" aria-current="page" href="index.php">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Berita</a>
+                <a class="nav-link" href="#berita">Berita</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Layanan</a>
@@ -81,7 +81,7 @@ $siaran = getJson($siaranPers);
       </section>
     </div>
     <!-- Berita -->
-    <section class="berita">
+    <section class="berita" id="berita">
       <div class="container">
         <div class="text-awal">
           <img class="icon" src="./img/icon-news.png" alt="" />
@@ -118,7 +118,7 @@ $siaran = getJson($siaranPers);
                   <p class="deskripsi"><?php echo substr(
                       $pemerintah[$i]["description"],
                       0,
-                      110
+                      105
                   ) . "..."; ?></p>
                   <a class="button" href="view.php?url=<?php echo $pemerintah[
                       $i
@@ -126,7 +126,8 @@ $siaran = getJson($siaranPers);
                 </div>
               </div>
             </div>
-              <?php endfor; ?>    
+              <?php endfor; ?>
+                  
         <!-- Berita kominfo -->
         <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
@@ -157,7 +158,7 @@ $siaran = getJson($siaranPers);
                   <p class="deskripsi"><?php echo substr(
                       $kominfo[$i]["description"],
                       0,
-                      110
+                      105
                   ) . "..."; ?></p>
                   <a class="button" href="view.php?url=<?php echo $kominfo[$i][
                       "url"
@@ -166,6 +167,8 @@ $siaran = getJson($siaranPers);
               </div>
             </div>
               <?php endfor; ?>
+
+              <!-- Siaran Pers -->
               <?php for ($i = 0; $i < 3; $i++): ?>
             <div class="col-md-4">
               <div class="berita-box">
@@ -195,7 +198,7 @@ $siaran = getJson($siaranPers);
                 <p class="deskripsi"><?php echo substr(
                     $siaran[$i]["description"],
                     0,
-                    110
+                    105
                 ) . "..."; ?></p>
                   <a class="button" href="view.php?url=<?php echo $siaran[$i][
                       "url"
@@ -264,7 +267,7 @@ $siaran = getJson($siaranPers);
               <div class="address">
                 <div class="address-box">
                   <img src="./img/icon-map.png" alt="" />
-                  <p>Jl. Medan Merdeka Barat no. 9, Jakarta 10110</p>
+                  <p>Jl. Medan Merdeka Barat no. 9, Jakarta 10105</p>
                 </div>
                 <div class="address-box">
                   <img src="./img/icon-phone.png" alt="" />
