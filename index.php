@@ -103,18 +103,18 @@ $siaran = getJson($siaranPers);
                   ]; ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[
     $i
 ]["title"]; ?></h3></a>
-<div class="label">
-                    <div class="date">
+<div class="label-wrap">
+                    <div class="label">
                       <span>
                         <img src="./img/icon-calendar.png" alt="" />
                         <?php echo $pemerintah[$i]["label"]["date"]; ?></span>
                     </div>
-                  <div class="catagory">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-tag.png" alt="" />
                       <?php echo $pemerintah[$i]["catagory"]; ?></span>
                   </div>
-                  <div class="total-view">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-eye.png" alt="" />
                       <?php echo $pemerintah[$i]["label"]["views"]; ?></span>
@@ -148,18 +148,18 @@ $siaran = getJson($siaranPers);
                 ]; ?>" target="_blank"><h3 class="judul"><?php echo $kominfo[
     $i
 ]["title"]; ?></h3></a>
-                  <div class="label">
-                    <div class="date">
+                  <div class="label-wrap">
+                    <div class="label">
                       <span>
                       <img src="./img/icon-calendar.png" alt="" />
                         <?php echo $kominfo[$i]["label"]["date"]; ?></span>
                     </div>
-                  <div class="catagory">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-tag.png" alt="" />
                       <?php echo $kominfo[$i]["catagory"]; ?></span>
                   </div>
-                  <div class="total-view">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-eye.png" alt="" />
                       <?php echo $kominfo[$i]["label"]["views"]; ?></span>
@@ -193,18 +193,18 @@ $siaran = getJson($siaranPers);
                 ]; ?>" target="_blank"><h3 class="judul"><?php echo $siaran[$i][
     "title"
 ]; ?></h3></a>
-                  <div class="label">
-                    <div class="date">
+                  <div class="label-wrap">
+                    <div class="label">
                       <span>
                       <img src="./img/icon-calendar.png" alt="" />
                         <?php echo $siaran[$i]["label"]["date"]; ?></span>
                     </div>
-                  <div class="catagory">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-tag.png" alt="" />
                       <?php echo $siaran[$i]["catagory"]; ?></span>
                   </div>
-                  <div class="total-view">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-eye.png" alt="" />
                       <?php echo $siaran[$i]["label"]["views"]; ?></span>
@@ -247,18 +247,18 @@ $siaran = getJson($siaranPers);
                 ]; ?>" target="_blank"><h3 class="judul"><?php echo $hoax[$i][
     "title"
 ]; ?></h3></a>
-                  <div class="label">
-                    <div class="date">
+                  <div class="label-wrap">
+                    <div class="label">
                       <span>
                       <img src="./img/icon-calendar.png" alt="" />
                         <?php echo $hoax[$i]["label"]["date"]; ?></span>
                     </div>
-                  <div class="catagory">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-tag.png" alt="" />
                       <?php echo $hoax[$i]["catagory"]; ?></span>
                   </div>
-                  <div class="total-view">
+                  <div class="label">
                     <span>
                     <img src="./img/icon-eye.png" alt="" />
                       <?php echo $hoax[$i]["label"]["views"]; ?></span>
