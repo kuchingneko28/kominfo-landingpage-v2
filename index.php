@@ -98,7 +98,7 @@ $siaran = getJson($siaranPers);
     $i
 ]["thumbnail"]; ?>" alt="" /></a>
                 <div class="text-berita">
-                  <a href="view.php?url=<?php echo $hoax[$i][
+                  <a href="view.php?url=<?php echo $pemerintah[$i][
                       "url"
                   ]; ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[
     $i
