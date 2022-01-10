@@ -160,13 +160,13 @@ h6 {
   border-radius: 10px;
   background: var(--bg-color);
   padding: 4px 8px;
-  font-size: 12px;
+  font-size: 11.5px;
   color: var(--text-white);
 }
 .label img {
-  margin-top: -2px;
+  margin-top: -4px;
   margin-right: 4px;
-  width: 18px;
+  width: 17px;
 }
 /* Berita hoax */
 .hoax {
