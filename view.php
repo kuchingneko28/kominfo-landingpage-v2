@@ -90,16 +90,19 @@ if (isset($_GET["url"])) {
           <h2><?php echo $article[0]["title"]; ?></h2>
           <div class="label-wrap">
             <div class="label">
+              <span>
               <img src="./img/icon-calendar.png" alt="" />
-              <span><?php echo $article[0]["date"]; ?></span>
+                <?php echo $article[0]["date"]; ?></span>
                 </div>
                 <div class="label">
+                  <span>
                   <img src="./img/icon-tag.png" alt="" />
-                  <span><?php echo $article[0]["catagory"]; ?></span>
+                    <?php echo $article[0]["catagory"]; ?></span>
                 </div>
                 <div class="label">
+                  <span>
                   <img src="./img/icon-eye.png" alt="" />
-                  <span><?php echo $article[0]["views"]; ?></span>
+                    <?php echo $article[0]["views"]; ?></span>
                 </div>
               </div>
         </div> 

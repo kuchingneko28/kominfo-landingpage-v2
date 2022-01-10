@@ -55,7 +55,7 @@ $siaran = getJson($siaranPers);
      <section class="hero">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 hero-title">
+            <div class="col-lg-6 hero-title">
               <h1>Kementerian Komunikasi dan Informatika Republik Indonesia</h1>
               <p>Kementerian Komunikasi dan Informatika Republik Indonesia adalah kementerian dalam Pemerintah Indonesia yang membidangi urusan komunikasi dan informatika.</p>
               <div class="herobox-wrap">
@@ -73,7 +73,7 @@ $siaran = getJson($siaranPers);
                 </a>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <img class="hero-img" src="./img/bg-img.png" alt="" />
             </div>
           </div>
@@ -90,39 +90,34 @@ $siaran = getJson($siaranPers);
         <div class="row">
           <!-- Berita pemerintah -->
           <?php for ($i = 0; $i < 3; $i++): ?>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="berita-box">
                 <a href="view.php?url=<?php echo $pemerintah[$i][
-                  "url"
-              ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $pemerintah[
+                    "url"
+                ]; ?>" target="_blank"><img class="berita-pict" src="<?php echo $pemerintah[
     $i
 ]["thumbnail"]; ?>" alt="" /></a>
                 <div class="text-berita">
                   <a href="view.php?url=<?php echo $hoax[$i][
-                    "url"
+                      "url"
                   ]; ?>" target="_blank"><h3 class="judul"><?php echo $pemerintah[
-                    $i
+    $i
 ]["title"]; ?></h3></a>
 <div class="label">
-                    <div class="post">
-                      <img src="./img/icon-calendar.png" alt="" />
-                      <span><?php echo $pemerintah[$i]["label"][
-                        "date"
-                      ]; ?></span>
+                    <div class="date">
+                      <span>
+                        <img src="./img/icon-calendar.png" alt="" />
+                        <?php echo $pemerintah[$i]["label"]["date"]; ?></span>
                     </div>
-                </div>
-                <div class="label">
                   <div class="catagory">
+                    <span>
                     <img src="./img/icon-tag.png" alt="" />
-                    <span><?php echo $pemerintah[$i]["catagory"]; ?></span>
+                      <?php echo $pemerintah[$i]["catagory"]; ?></span>
                   </div>
-                  </div>
-                <div class="label">
                   <div class="total-view">
+                    <span>
                     <img src="./img/icon-eye.png" alt="" />
-                    <span><?php echo $pemerintah[$i]["label"][
-                        "views"
-                    ]; ?></span>
+                      <?php echo $pemerintah[$i]["label"]["views"]; ?></span>
                   </div>
                   </div>
                   <p class="deskripsi"><?php echo substr(
@@ -140,7 +135,7 @@ $siaran = getJson($siaranPers);
                   
         <!-- Berita kominfo -->
         <?php for ($i = 0; $i < 3; $i++): ?>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="berita-box">
               <a href="view.php?url=<?php echo $kominfo[$i][
                   "url"
@@ -154,21 +149,20 @@ $siaran = getJson($siaranPers);
     $i
 ]["title"]; ?></h3></a>
                   <div class="label">
-                    <div class="post">
+                    <div class="date">
+                      <span>
                       <img src="./img/icon-calendar.png" alt="" />
-                      <span><?php echo $kominfo[$i]["label"]["date"]; ?></span>
+                        <?php echo $kominfo[$i]["label"]["date"]; ?></span>
                     </div>
-                </div>
-                <div class="label">
                   <div class="catagory">
+                    <span>
                     <img src="./img/icon-tag.png" alt="" />
-                    <span><?php echo $kominfo[$i]["catagory"]; ?></span>
+                      <?php echo $kominfo[$i]["catagory"]; ?></span>
                   </div>
-                  </div>
-                <div class="label">
                   <div class="total-view">
+                    <span>
                     <img src="./img/icon-eye.png" alt="" />
-                    <span><?php echo $kominfo[$i]["label"]["views"]; ?></span>
+                      <?php echo $kominfo[$i]["label"]["views"]; ?></span>
                   </div>
                   </div>
                   <p class="deskripsi"><?php echo substr(
@@ -186,7 +180,7 @@ $siaran = getJson($siaranPers);
               
               <!-- Siaran Pers -->
               <?php for ($i = 0; $i < 3; $i++): ?>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="berita-box">
               <a href="view.php?url=<?php echo $siaran[$i][
                   "url"
@@ -200,25 +194,24 @@ $siaran = getJson($siaranPers);
     "title"
 ]; ?></h3></a>
                   <div class="label">
-                    <div class="post">
+                    <div class="date">
+                      <span>
                       <img src="./img/icon-calendar.png" alt="" />
-                      <span><?php echo $siaran[$i]["label"]["date"]; ?></span>
+                        <?php echo $siaran[$i]["label"]["date"]; ?></span>
                     </div>
-                </div>
-                <div class="label">
                   <div class="catagory">
+                    <span>
                     <img src="./img/icon-tag.png" alt="" />
-                    <span><?php echo $siaran[$i]["catagory"]; ?></span>
+                      <?php echo $siaran[$i]["catagory"]; ?></span>
                   </div>
-                  </div>
-                <div class="label">
                   <div class="total-view">
+                    <span>
                     <img src="./img/icon-eye.png" alt="" />
-                    <span><?php echo $siaran[$i]["label"]["views"]; ?></span>
+                      <?php echo $siaran[$i]["label"]["views"]; ?></span>
                   </div>
                   </div>
                 <p class="deskripsi"><?php echo substr(
-                  $siaran[$i]["description"],
+                    $siaran[$i]["description"],
                     0,
                     105
                 ) . "..."; ?></p>
@@ -241,7 +234,7 @@ $siaran = getJson($siaranPers);
         </div>
         <div class="row">
           <?php for ($i = 0; $i < 3; $i++): ?>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="berita-box">
                 <a href="view.php?url=<?php echo $hoax[$i][
                     "url"
@@ -256,20 +249,19 @@ $siaran = getJson($siaranPers);
 ]; ?></h3></a>
                   <div class="label">
                     <div class="date">
+                      <span>
                       <img src="./img/icon-calendar.png" alt="" />
-                      <span><?php echo $hoax[$i]["label"]["date"]; ?></span>
+                        <?php echo $hoax[$i]["label"]["date"]; ?></span>
                     </div>
-                </div>
-                <div class="label">
                   <div class="catagory">
+                    <span>
                     <img src="./img/icon-tag.png" alt="" />
-                    <span><?php echo $hoax[$i]["catagory"]; ?></span>
+                      <?php echo $hoax[$i]["catagory"]; ?></span>
                   </div>
-                  </div>
-                <div class="label">
                   <div class="total-view">
+                    <span>
                     <img src="./img/icon-eye.png" alt="" />
-                    <span><?php echo $hoax[$i]["label"]["views"]; ?></span>
+                      <?php echo $hoax[$i]["label"]["views"]; ?></span>
                   </div>
                   </div>
                   <a class="button" href="view.php?url=<?php echo $hoax[$i][
@@ -286,7 +278,7 @@ $siaran = getJson($siaranPers);
     <footer class="footer">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="wrap-content show">
             <div class="address-wrap">
               <div class="logo-footer">
@@ -309,7 +301,7 @@ $siaran = getJson($siaranPers);
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-lg-5">
           <div class="wrap-content hide">
             <div class="text-footer">
               <img class="icon" src="./img/icon-twitter.png" alt="" />
@@ -320,7 +312,7 @@ $siaran = getJson($siaranPers);
             </div>
           </div>  
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <div class="wrap-content hide">
             <div class="text-footer">
               <img class="icon" src="./img/icon-task.png" alt="" />

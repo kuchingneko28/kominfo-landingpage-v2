@@ -152,21 +152,26 @@ h6 {
   text-decoration: none;
   transition: 0.4s all;
 }
-
 .label {
-  padding: 4px 8px;
-  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.label div {
+  padding: 5px 5px 10px 0;
+}
+.label span {
+  display: inline-block;
   border-radius: 10px;
   background: var(--bg-color);
-}
-
-.label span {
-  font-size: 12.5px;
+  padding: 4px 8px;
+  font-size: 11px;
   color: var(--text-white);
 }
 .label img {
+  margin-top: -2px;
   margin-right: 4px;
-  width: 17px;
+  width: 15px;
 }
 /* Berita hoax */
 .hoax {
@@ -255,7 +260,7 @@ h6 {
 }
 
 /* Media query untuk desktop view*/
-@media screen and (min-width: 855px) {
+@media screen and (min-width: 992px) {
   /* Hero */
   .hero-title {
     text-align: left;

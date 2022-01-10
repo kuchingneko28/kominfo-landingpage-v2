@@ -3,7 +3,7 @@
 function getJson($url)
 {
     $ch = curl_init();
-    
+
     curl_setopt_array($ch, [
         CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => 1,
@@ -15,6 +15,5 @@ function getJson($url)
     $hasil = json_decode($res, true);
     curl_close($ch);
 
-    
     return $hasil;
 }
