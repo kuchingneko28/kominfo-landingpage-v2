@@ -354,6 +354,7 @@ h6 {
     color: var(--text-color);
     border-radius: 10px 10px 10px 0;
     position: relative;
+    max-width: 240px;
   }
   .nama::before {
     content: "";
