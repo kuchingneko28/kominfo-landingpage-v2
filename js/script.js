@@ -4,13 +4,13 @@ sr.reveal(".hero-title", {
   distance: "-100px",
   origin: "bottom",
   duration: 1000,
-  delay: 300,
+  delay: 400,
 });
 sr.reveal(".hero-img", {
   distance: "-100px",
   origin: "bottom",
   duration: 1000,
-  delay: 500,
+  delay: 600,
 });
 
 sr.reveal(".text-awal", {
