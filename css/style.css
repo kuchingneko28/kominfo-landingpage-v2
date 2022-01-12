@@ -128,6 +128,8 @@ h6 {
   width: 100%;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 .text-berita {
   padding: 10px;
@@ -276,16 +278,13 @@ h6 {
   }
   /* Berita */
   .berita-pict:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
     opacity: 0.7;
   }
   .berita-pict {
-    height: 215px;
+    height: 250px;
     transform: scale(1);
     transition: var(--transition);
-  }
-  .hoax .berita-pict {
-    height: 300px;
   }
   .berita-box {
     overflow: hidden;
