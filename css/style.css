@@ -169,7 +169,7 @@ h6 {
 .label img {
   margin-top: -2px;
   margin-right: 2px;
-  width: 16px;
+  width: 14px;
 }
 /* Berita hoax */
 .hoax {
@@ -253,6 +253,7 @@ h6 {
 .label-wrap {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .label-wrap .label {
   margin-right: 8px;
